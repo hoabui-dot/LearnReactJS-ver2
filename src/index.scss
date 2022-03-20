@@ -1,3 +1,5 @@
-@import "./assets/scss/functions.scss";
-@import "./assets/scss/vars.scss";
-@import "./assets/scss/mixin.scss";
+@charset "UTF-8";
+
+@import "./assets/scss/vars.scss"; // 変数 Variable
+@import "./assets/scss/functions.scss"; // 関数等 Function
+@import "./assets/scss/mixin.scss"; // mixin
