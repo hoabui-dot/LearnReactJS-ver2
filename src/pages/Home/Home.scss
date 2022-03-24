@@ -17,61 +17,24 @@ img {
     object-fit: cover;
 }
 .header-background {
-    background: url("https://images.unsplash.com/photo-1465433045946-ba6506ce5a59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background: url("../../assets/images/header.png");
     width: 100%;
     height: 370px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-.card {
-    position: relative;
-    width: 100%;
-    max-width: 970px;
-    height: 400px;
-    background-color: var(--green);
-    margin: 0 auto;
-    margin-top: -194px;
-    box-shadow: rgb(0 0 0 / 16%) 0px 2px 5px 0px, rgb(0 0 0 / 12%) 0px 2px 10px 0px;
-}
-.avatar {
+.menu-btn {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    max-width: 400px;
-    height: 400px;
+    top: 3%;
+    left: 2%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #918376;
+    background-color: unset;
+    transition: all 0.5s ease-in-out;
 }
-.card-content {
-    font-family: "raleway", sans-serif;
-    color: white;
-    padding: 40px;
-}
-.card-name {
-    text-shadow: 2px s2px 4px rgb(0 0 0 / 29%);
-}
-.card-name h4 {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 2.18em;
-}
-.card-name h6 {
-    margin-bottom: 30px;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-.infos-list {
-    list-style-type: none;
-}
-.infos-list li {
-    display: flex;
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 600;
-}
-.infos-list li i {
-    font-size: 23px;
-}
-.infos-list li span {
-    margin-left: 7px;
+.menu-btn i {
+    font-size: 20px;
+    color: var(--fb);
 }
