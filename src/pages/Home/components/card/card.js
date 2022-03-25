@@ -27,7 +27,7 @@ const card = () => {
                   <span>yourpersonalwsebsite.com</span>
                 </li>
                 <li>
-                  <i class='fa-brands fa-skype'></i>
+                  <i className='fa-brands fa-skype'></i>
                   <span>
                     <a href='https://join.skype.com/invite/xZFCGR1NBK20'>
                       https://join.skype.com/invite/xZFCGR1NBK20
@@ -47,26 +47,26 @@ const card = () => {
             <div className='card-icon'>
               <ul>
                 <li className='fb-icon'>
-                  <i class='fa-brands fa-facebook-f'></i>
+                  <i className='fa-brands fa-facebook-f'></i>
                 </li>
                 <li className='tw-icon'>
-                  <i class='fa-brands fa-twitter'></i>
+                  <i className='fa-brands fa-twitter'></i>
                 </li>
                 <li className='gg-icon'>
-                  <i class='fa-brands fa-google-plus-g'></i>
+                  <i className='fa-brands fa-google-plus-g'></i>
                 </li>
                 <li className='in-icon'>
-                  <i class='fa-brands fa-linkedin-in'></i>
+                  <i className='fa-brands fa-linkedin-in'></i>
                 </li>
                 <li className='wf-icon'>
-                  <i class='fa-solid fa-wifi'></i>
+                  <i className='fa-solid fa-wifi'></i>
                 </li>
               </ul>
             </div>
           </div>
           <div className='triangle'></div>
           <button className='btn-plus'>
-            <i class='fa-solid fa-plus'></i>
+            <i className='fa-solid fa-plus'></i>
           </button>
           <figure className='avatar'>
             <img src={avatar} alt='Avatar' />

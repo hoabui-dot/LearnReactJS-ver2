@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import Card from "./components/card/card";
-// import Desc from "./components/desc/desc";
+import Education from "./components/education/education";
 
 const index = () => {
   return (
@@ -9,10 +9,10 @@ const index = () => {
       <header>
         <div className='header-background'></div>
         <button className='menu-btn'>
-          <i class='fa-solid fa-bars'></i>
+          <i className='fa-solid fa-bars'></i>
         </button>
         <Card />
-        {/* <Desc /> */}
+        <Education />
       </header>
     </>
   );
