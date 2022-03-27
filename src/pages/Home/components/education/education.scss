@@ -1,46 +1,57 @@
 @import "../../../../App.scss";
 
-.education-wrap {
-    position: relative;
-}
-.education-title {
-    margin-top: 50px;
-    text-align: center;
-    @include font-size(40);
-    color: var(--words);
-}
-.education-title i {
-    color: var(--purple);
-    padding: 15px 17px;
-    @extend .box-shadow;
-}
-.education-title span {
-    margin-left: 10px;
-}
-.eduBox-flip {
-    margin-top: -55px;
-}
-.eduBox-flip .eduBox-wrap {
-    border-left: none;
-    border-right: 5px solid $green;
-}
-.eduBox-flip {
-    transform: scale(-1);
-    p,
-    span {
-        transform: scale(-1);
+.education {
+    &-wrap {
+        position: relative;
     }
-}
-.eduBox {
-    position: relative;
-    margin-top: 30px;
-    padding: 0 5px;
-}
-.education-tree {
-    position: absolute;
-    top: 107px;
-    left: 500px;
-    width: 5px;
-    height: 800px;
-    background-color: $green;
+    &-flip {
+        margin-top: -55px;
+        transform: scale(-1);
+        span,
+        i {
+            transform: scale(-1);
+        }
+        .education-box {
+            &__wrap {
+                border-left: none;
+                border-right: 5px solid $green;
+            }
+            &__content {
+                transform: scale(-1);
+            }
+        }
+        .edu {
+            &-line {
+                top: 200px;
+                z-index: -1;
+            }
+            &-key {
+                top: 177px;
+            }
+        }
+    }
+    &-box {
+        ul {
+            li:not(:first-child) {
+                margin-top: -92px;
+            }
+            list-style-type: none;
+        }
+        position: relative;
+        margin-top: 30px;
+        padding: 0 5px;
+    }
+    &-tree {
+        position: absolute;
+        top: 55px;
+        left: 500px;
+        width: 5px;
+        background-color: $green;
+        &__exp {
+            height: 385px;
+        }
+        &__edu {
+            height: 670px;
+        }
+    }
 }
