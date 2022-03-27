@@ -1,15 +1,13 @@
 import React from "react";
 import { useRef } from "react";
-import { NavLink } from "react-router-dom";
-import "./Home.scss";
+import { useIntersection } from "./useInterSection";
+import { educationData, experienceData } from "./fakeData";
 import Card from "./components/card/card";
+import Menu from "./components/menuBtn/menu";
+import Skills from "./components/skills/skills";
 import FrameSection from "./components/education";
 import TitleSection from "./components/titleSection";
-import Skills from "./components/skills/skills";
-import { educationData, experienceData } from "./fakeData";
-import { useIntersection } from "./useInterSection";
-import Menu from "./components/menuBtn/menu";
-import { Link } from "@mui/material";
+import "./Home.scss";
 const Index = () => {
   const edu = useRef();
   return (

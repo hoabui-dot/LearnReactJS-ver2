@@ -17,6 +17,7 @@ function education({ dataSection, lineWidth }) {
                 desc={data.desc}
                 keywords={data.keywords}
                 icon={data.icon}
+                more={data.more}
               />
             </li>
           ))}

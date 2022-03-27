@@ -6,6 +6,7 @@ export const educationData = [
     desc: "I completed my preparatory education from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.",
     keywords: "p",
     flip: "",
+    more: "block",
   },
   {
     job: "High School",
@@ -38,6 +39,7 @@ export const educationData = [
     desc: "I completed this course from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.",
     keywords: "u",
     flip: "",
+    more: "block",
   },
   {
     job: "Web Development",
@@ -46,6 +48,7 @@ export const educationData = [
     desc: "I completed this course from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.",
     icon: "fa-solid fa-earth-americas",
     flip: "education-flip",
+    more: "block",
   },
 ];
 export const experienceData = [
@@ -56,6 +59,7 @@ export const experienceData = [
     desc: "I started my designing carrier here, spent tow years learning and working in various designing aspects.",
     keywords: "d",
     flip: "",
+    more: "block",
   },
   {
     job: "Frontend Developer",
@@ -80,5 +84,6 @@ export const experienceData = [
     desc: "I recently joined here, currently working on various development aspects. I already worked on about.",
     keywords: "d",
     flip: "education-flip",
+    more: "block",
   },
 ];

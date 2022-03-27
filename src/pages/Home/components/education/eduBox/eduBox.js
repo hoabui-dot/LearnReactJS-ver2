@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import "./eduBox.scss";
+import MoreInfo from "./moreInfo";
 
-const eduBox = ({ job, jobDesc, time, desc, keywords, icon }) => {
+const eduBox = ({ job, jobDesc, time, desc, keywords, icon, more }) => {
   function keyWord() {
     if (keywords) {
       return <span>{keywords}</span>;
@@ -18,6 +19,10 @@ const eduBox = ({ job, jobDesc, time, desc, keywords, icon }) => {
             <p className='job-desc'>{jobDesc}</p>
             <p className='time'>{time}</p>
             <p className='desc'>{desc}</p>
+            <div className={`btn-more ${more}`}>
+              <i class='fa-solid fa-ellipsis'></i>
+              <MoreInfo />
+            </div>
           </div>
         </div>
         <div className='edu-key'>{keyWord()}</div>

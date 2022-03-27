@@ -1,10 +1,5 @@
 @import "../../../../App.scss";
 @import "../../../../index.scss";
-.menu-maxWidth {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-}
 .menu {
     width: 225px;
     height: 100%;
@@ -15,6 +10,11 @@
     background-color: $grey;
     transition: all 0.5s ease-in-out;
     box-shadow: rgb(0 0 0 / 16%) 0px 2px 5px 0px, rgb(0 0 0 / 12%) 0px 2px 10px 0px;
+    &-maxWidth {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+    }
     &-avt {
         width: 100%;
         height: 200px;
@@ -48,18 +48,21 @@
             margin-top: 22px;
         }
     }
-}
-.menu-btn {
-    position: absolute;
-    right: -65px;
-    top: 20px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #918376;
-    background-color: unset;
-    transition: all 0.5s ease-in-out;
-    i {
-        font-size: 20px;
-        color: $fb;
+    &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: -65px;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #918376;
+        background-color: unset;
+        transition: all 0.5s ease-in-out;
+        i {
+            font-size: 20px;
+            color: $fb;
+        }
     }
 }
