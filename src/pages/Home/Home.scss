@@ -25,20 +25,6 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
 }
-.menu-btn {
-    position: absolute;
-    top: 3%;
-    left: 2%;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #918376;
-    background-color: unset;
-    transition: all 0.5s ease-in-out;
-    i {
-        font-size: 20px;
-        color: $fb;
-    }
-}
 @keyframes fadeUpBanner {
     0% {
         transform: translateX(-30px) scale(0.7);

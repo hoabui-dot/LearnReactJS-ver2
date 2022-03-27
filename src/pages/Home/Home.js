@@ -1,12 +1,15 @@
 import React from "react";
 import { useRef } from "react";
+import { NavLink } from "react-router-dom";
 import "./Home.scss";
 import Card from "./components/card/card";
 import FrameSection from "./components/education";
 import TitleSection from "./components/titleSection";
 import Skills from "./components/skills/skills";
-import { educationData, experienceData } from "./components/education/fakeData";
+import { educationData, experienceData } from "./fakeData";
 import { useIntersection } from "./useInterSection";
+import Menu from "./components/menuBtn/menu";
+import { Link } from "@mui/material";
 const Index = () => {
   const edu = useRef();
   return (
@@ -14,9 +17,7 @@ const Index = () => {
       <div>
         <header>
           <div className='header-background'></div>
-          <button className='menu-btn'>
-            <i className='fa-solid fa-bars'></i>
-          </button>
+          <Menu />
           <Card />
         </header>
         <section
@@ -52,5 +53,4 @@ const Index = () => {
     </div>
   );
 };
-//do la ai sao k dat ten viet thuong :)
 export default Index;

@@ -1,0 +1,65 @@
+@import "../../../../App.scss";
+@import "../../../../index.scss";
+.menu-maxWidth {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.menu {
+    width: 225px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -225px;
+    z-index: 100;
+    background-color: $grey;
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgb(0 0 0 / 16%) 0px 2px 5px 0px, rgb(0 0 0 / 12%) 0px 2px 10px 0px;
+    &-avt {
+        width: 100%;
+        height: 200px;
+        background-color: $green;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        font-size: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &__wrap {
+            width: 140px;
+            height: 140px;
+            border: 5px solid white;
+        }
+    }
+    &-list {
+        margin-top: 26px;
+        a {
+            margin-left: 35px;
+            text-decoration: none;
+            display: block;
+            color: #44413f;
+            font-weight: 500;
+            i {
+                margin-right: 7px;
+            }
+        }
+        a:not(:first-child) {
+            margin-top: 22px;
+        }
+    }
+}
+.menu-btn {
+    position: absolute;
+    right: -65px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #918376;
+    background-color: unset;
+    transition: all 0.5s ease-in-out;
+    i {
+        font-size: 20px;
+        color: $fb;
+    }
+}
