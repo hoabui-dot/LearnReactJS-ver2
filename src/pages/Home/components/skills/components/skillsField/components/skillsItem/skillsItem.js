@@ -1,11 +1,13 @@
 import React from "react";
+import "../../../../skills.scss";
 
 const skillsItem = ({ language, percent }) => {
   return (
-    <div className='skill-item'>
-      <div className='skill-subtitle'>
-        <span>{language}</span>
-        <span>{percent + `%`}</span>
+    <div className='skills-item'>
+      <div className='skills-subTitle' data-percent={percent}>
+        <p>{language}</p>
+        <p>{percent}%</p>
+        <div className='skills-percent' style={{ width: `${percent}%` }}></div>
       </div>
     </div>
   );

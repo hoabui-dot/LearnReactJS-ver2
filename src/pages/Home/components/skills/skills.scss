@@ -1,2 +1,51 @@
 @import "../../../../App.scss";
 @import "../../../../index.scss";
+
+.skills-wrap {
+    width: 100%;
+    height: 300px;
+    background-color: $green;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    margin-top: 35px;
+}
+.skills-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.skills-wrap div:not(:first-child) {
+    margin-left: 30px;
+}
+.skills-field {
+    width: 277px;
+}
+.skills-list {
+    list-style-type: none;
+}
+.skills-list li:not(:first-child) {
+    margin-top: 30px;
+}
+.skills-subTitle {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-subTitle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 24px;
+    height: 5px;
+    background-color: #05985a;
+}
+.skills-percent {
+    position: absolute;
+    height: 5px;
+    top: 24px;
+    left: -29px;
+    background-color: #fff;
+}
