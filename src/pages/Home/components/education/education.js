@@ -6,8 +6,8 @@ function education({ dataSection, lineWidth }) {
   function educationList() {
     return (
       <>
-        <div className={`education-tree ` + lineWidth}></div>
-        <ul className='education-list'>
+        <div className={`education__tree ` + lineWidth}></div>
+        <ul className='education__list'>
           {dataSection.map((data, index) => (
             <li className={data.flip} key={index}>
               <EduBox
@@ -26,8 +26,8 @@ function education({ dataSection, lineWidth }) {
     );
   }
   return (
-    <div className='education-wrap'>
-      <div className='education-box'>{educationList()}</div>
+    <div className='education__wrap'>
+      <div className='education__box'>{educationList()}</div>
     </div>
   );
 }

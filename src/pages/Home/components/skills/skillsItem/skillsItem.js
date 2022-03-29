@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../../skills.scss";
 
 const skillsItem = ({ language, percent }) => {
   return (

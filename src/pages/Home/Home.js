@@ -5,16 +5,16 @@ import { educationData, experienceData } from "./fakeData";
 import Card from "./components/card/card";
 import Menu from "./components/menuBtn/menu";
 import Skills from "./components/skills/skills";
-import FrameSection from "./components/education";
+import FrameSection from "./components/education/education";
 import TitleSection from "./components/titleSection";
 import "./Home.scss";
 const Index = () => {
   const edu = useRef();
   return (
-    <div className='home-wrap'>
+    <div className='home__wrap'>
       <div>
         <header>
-          <div className='header-background'></div>
+          <div className='header__background'></div>
           <Menu />
           <Card />
         </header>
@@ -28,7 +28,7 @@ const Index = () => {
             <TitleSection title='education' icon='fa-solid fa-book' />
             <FrameSection
               dataSection={educationData}
-              lineWidth='education-tree__edu'
+              lineWidth='education__tree--edu'
             />
           </div>
         </section>
@@ -43,7 +43,7 @@ const Index = () => {
             <TitleSection title='experience' icon='fa-solid fa-layer-group' />
             <FrameSection
               dataSection={experienceData}
-              lineWidth='education-tree__exp'
+              lineWidth='education__tree--exp'
             />
           </div>
         </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import SkillsItem from "./components/skillsItem/skillsItem";
+import SkillsItem from "../skillsItem/skillsItem";
 
 const index = ({ dataSkills, title }) => {
   return (

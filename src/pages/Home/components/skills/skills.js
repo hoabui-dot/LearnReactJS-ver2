@@ -1,6 +1,6 @@
 import React from "react";
-import Field from "./components/skillsField/skillField";
-import { professional, personal, software } from "./fakeData_skill";
+import Field from "./skillsField/skillsField";
+import { professional, personal, software } from "./mockData";
 import "./skills.scss";
 
 const index = () => {

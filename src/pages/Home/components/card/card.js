@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../../../../assets/images/avtCV.PNG";
+import avatar from "../../../../assets/images/avtCv.png";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import CallIcon from "@mui/icons-material/Call";
@@ -10,14 +10,14 @@ const card = () => {
   return (
     <section className='card'>
       <div className='container'>
-        <div className='card-wrap'>
-          <div className='card-content'>
-            <div className='card-name'>
+        <div className='card__wrap'>
+          <div className='card__content'>
+            <div className='card__name'>
               <h4>bui van hoa</h4>
               <h6>Software Engineer & UI/UX Expert</h6>
             </div>
-            <div className='card-infos'>
-              <ul className='infos-list'>
+            <div className='card__infos'>
+              <ul className='infos__list'>
                 <li>
                   <EmailIcon />
                   <span>ongchunhostu1998@gmail.com</span>
@@ -44,28 +44,29 @@ const card = () => {
                 </li>
               </ul>
             </div>
-            <div className='card-icon'>
-              <ul>
-                <li className='fb-icon'>
-                  <i className='fa-brands fa-facebook-f'></i>
-                </li>
-                <li className='tw-icon'>
-                  <i className='fa-brands fa-twitter'></i>
-                </li>
-                <li className='gg-icon'>
-                  <i className='fa-brands fa-google-plus-g'></i>
-                </li>
-                <li className='in-icon'>
-                  <i className='fa-brands fa-linkedin-in'></i>
-                </li>
-                <li className='wf-icon'>
-                  <i className='fa-solid fa-wifi'></i>
-                </li>
-              </ul>
+            <div className='card__icon'>
+              <a
+                href='https://www.facebook.com/profile.php?id=100015533373382'
+                className='icon__fb'
+              >
+                <i class='fa-brands fa-facebook-f'></i>
+              </a>
+              <a className='icon__tw'>
+                <i className='fa-brands fa-twitter'></i>
+              </a>
+              <a className='icon__gg'>
+                <i className='fa-brands fa-google-plus-g'></i>
+              </a>
+              <a className='icon__in'>
+                <i className='fa-brands fa-linkedin-in'></i>
+              </a>
+              <a className='icon__wf'>
+                <i className='fa-solid fa-wifi'></i>
+              </a>
             </div>
           </div>
           <div className='triangle'></div>
-          <button className='btn-plus'>
+          <button className='btn__plus'>
             <i className='fa-solid fa-plus'></i>
           </button>
           <figure className='avatar'>

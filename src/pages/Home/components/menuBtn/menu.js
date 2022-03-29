@@ -13,18 +13,18 @@ const menu = () => {
     }
   });
   return (
-    <div className='menu-maxWidth'>
+    <div className='menu__maxWidth'>
       <div className='menu'>
-        <button className='menu-btn'>
+        <button className='menu__btn'>
           <i className='fa-solid fa-bars'></i>
         </button>
-        <div className='menu-wrap'>
-          <div className='menu-avt'>
-            <div className='menu-avt__wrap'>
+        <div className='menu__wrap'>
+          <div className='menu__avt'>
+            <div className='menu__avt__wrap'>
               <span>H</span>
             </div>
           </div>
-          <div className='menu-list'>
+          <div className='menu__list'>
             <a href='#'>
               <i className='fa-solid fa-user-large'></i>
               <span>home</span>

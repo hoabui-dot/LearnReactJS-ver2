@@ -14,7 +14,7 @@ export const educationData = [
     time: "Jan 2000 - Mar 2005",
     desc: "I completed my high school degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.",
     keywords: "g",
-    flip: "education-flip",
+    flip: "education__flip",
   },
   {
     job: "Computer Science",
@@ -30,7 +30,7 @@ export const educationData = [
     time: "Jan 2009 - Mar 2010",
     desc: "I completed this degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.",
     icon: "fa-solid fa-graduation-cap",
-    flip: "education-flip",
+    flip: "education__flip",
   },
   {
     job: "UI/UX Workshop",
@@ -47,7 +47,7 @@ export const educationData = [
     time: "Jan 2011 - Mar 2012",
     desc: "I completed this course from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.",
     icon: "fa-solid fa-earth-americas",
-    flip: "education-flip",
+    flip: "education__flip",
     more: "block",
   },
 ];
@@ -67,7 +67,7 @@ export const experienceData = [
     time: "Jan 2010 - Mar 2012",
     desc: "I started my frontend carrier here, spent tow years learning and working in various frontend aspects. I worked on about 40+ projects local and online.",
     keywords: "d",
-    flip: "education-flip",
+    flip: "education__flip",
   },
   {
     job: "Designer",
@@ -83,7 +83,7 @@ export const experienceData = [
     time: "Jan 2010 - Mar 2012",
     desc: "I recently joined here, currently working on various development aspects. I already worked on about.",
     keywords: "d",
-    flip: "education-flip",
+    flip: "education__flip",
     more: "block",
   },
 ];

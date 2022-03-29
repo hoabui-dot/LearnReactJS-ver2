@@ -1,17 +1,17 @@
 @import "../../../../App.scss";
 
 .education {
-    &-wrap {
+    &__wrap {
         position: relative;
     }
-    &-flip {
+    &__flip {
         margin-top: -55px;
         transform: scale(-1);
         span,
         i {
             transform: scale(-1);
         }
-        .education-box {
+        .education__box {
             &__wrap {
                 border-left: none;
                 border-right: 5px solid $green;
@@ -21,16 +21,16 @@
             }
         }
         .edu {
-            &-line {
+            &__line {
                 top: 200px;
                 z-index: -1;
             }
-            &-key {
+            &__key {
                 top: 177px;
             }
         }
     }
-    &-box {
+    &__box {
         ul {
             li:not(:first-child) {
                 margin-top: -92px;
@@ -39,23 +39,22 @@
         }
         position: relative;
         margin-top: 30px;
-        padding: 0 5px;
     }
-    &-tree {
+    &__tree {
         position: absolute;
         top: 55px;
         left: 500px;
         width: 5px;
         background-color: $green;
-        &__exp {
+        &--exp {
             height: 385px;
         }
-        &__edu {
+        &--edu {
             height: 670px;
         }
     }
 }
-.btn-more {
+.btn__more {
     cursor: pointer;
     font-size: 22px;
     color: #19762d;
