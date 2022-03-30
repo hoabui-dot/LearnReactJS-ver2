@@ -2,22 +2,17 @@ import React from "react";
 import { useRef } from "react";
 import { useIntersection } from "./useInterSection";
 import { educationData, experienceData } from "./fakeData";
-import Card from "./components/card/card";
-import Menu from "./components/menuBtn/menu";
 import Skills from "./components/skills/skills";
-import FrameSection from "./components/education/education";
+import FrameSection from "./components/Education/education";
 import TitleSection from "./components/titleSection";
+import Banner from "./components/Banner/banner";
 import "./Home.scss";
 const Index = () => {
   const edu = useRef();
   return (
     <div className='home__wrap'>
+      <Banner />
       <div>
-        <header>
-          <div className='header__background'></div>
-          <Menu />
-          <Card />
-        </header>
         <section
           ref={edu}
           className={`education animated ${
