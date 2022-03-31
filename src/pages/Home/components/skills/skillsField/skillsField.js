@@ -3,11 +3,11 @@ import SkillsItem from "../skillsItem/skillsItem";
 
 const index = ({ dataSkills, title }) => {
   return (
-    <div className='skills-field'>
-      <div className='skills-title'>
+    <div className='skills__field'>
+      <div className='skills__title'>
         <p>{title}</p>
       </div>
-      <ul className='skills-list'>
+      <ul className='skills__list'>
         {dataSkills.map((data, index) => (
           <li key={index}>
             <SkillsItem language={data.language} percent={data.percent} />

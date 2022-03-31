@@ -1,11 +1,17 @@
 import React from "react";
 import "./titleSection.scss";
 
-const index = ({ icon, title }) => {
+const index = ({ urlIcon, icon, title }) => {
+  function handleIcon() {
+    if (icon) return <i className={icon}></i>;
+    if (urlIcon) return <img src={urlIcon} alt='Icon Title Section' />;
+  }
   return (
-    <div className='education-title'>
-      <i className={icon}></i>
-      <span>{title}</span>
+    <div className='title'>
+      <div className='title__wrap'>
+        {handleIcon()}
+        <span>{title}</span>
+      </div>
     </div>
   );
 };

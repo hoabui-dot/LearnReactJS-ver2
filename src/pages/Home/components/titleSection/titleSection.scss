@@ -1,18 +1,26 @@
 @import "../../../../index.scss";
 @import "../../../../App.scss";
-.education {
-    &-title {
-        margin-top: 50px;
-        text-align: center;
-        @include font-size(40);
-        color: $dark;
+
+.title {
+    margin-top: 68px;
+    text-align: center;
+    @include font-size(32);
+    color: $dark;
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         i {
             color: #1abc9c;
             padding: 13px;
             @extend .box-shadow;
         }
+        img {
+            max-width: 72px;
+            padding: 13px;
+            @extend .box-shadow;
+        }
         span {
-            font-size: 32px;
             font-weight: bolder;
             margin-left: 10px;
             text-transform: uppercase;

@@ -12,15 +12,15 @@ const eduBox = ({ job, jobDesc, time, desc, keywords, icon, more }) => {
   }
   return (
     <Fragment>
-      <div className='education__box__wrap'>
-        <div className='education__box__content'>
-          <div className='education__box__item'>
+      <div className='eduBox__wrap'>
+        <div className='eduBox__content'>
+          <div className='eduBox__item'>
             <p className='job'>{job}</p>
             <p className='job__desc'>{jobDesc}</p>
             <p className='time'>{time}</p>
-            <p className='desc'>{desc}</p>
+            <p className='eduBox__desc'>{desc}</p>
             <div className={`btn__more ${more}`}>
-              <i class='fa-solid fa-ellipsis'></i>
+              <i className='fa-solid fa-ellipsis'></i>
               {/* <MoreInfo /> */}
             </div>
           </div>

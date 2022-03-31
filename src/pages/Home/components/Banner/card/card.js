@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../../../../assets/images/avtCv.png";
+import avatar from "../../../../../assets/images/profile.png";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import CallIcon from "@mui/icons-material/Call";
@@ -10,7 +10,7 @@ const card = () => {
   return (
     <section className='card'>
       <div className='container'>
-        <div className='card__wrap'>
+        <div className='card__wrap boxShadow'>
           <div className='card__content'>
             <div className='card__name'>
               <h4>bui van hoa</h4>
@@ -49,15 +49,18 @@ const card = () => {
                 href='https://www.facebook.com/profile.php?id=100015533373382'
                 className='icon__fb'
               >
-                <i class='fa-brands fa-facebook-f'></i>
+                <i className='fa-brands fa-facebook-f'></i>
               </a>
-              <a className='icon__tw'>
+              <a href='https://twitter.com/hoabui1907' className='icon__tw'>
                 <i className='fa-brands fa-twitter'></i>
               </a>
-              <a className='icon__gg'>
+              <a href='https://contacts.google.com/?hl=vi' className='icon__gg'>
                 <i className='fa-brands fa-google-plus-g'></i>
               </a>
-              <a className='icon__in'>
+              <a
+                href='https://www.linkedin.com/in/h%C3%B3a-b%C3%B9i-080768234/'
+                className='icon__in'
+              >
                 <i className='fa-brands fa-linkedin-in'></i>
               </a>
               <a className='icon__wf'>

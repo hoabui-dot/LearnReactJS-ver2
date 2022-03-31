@@ -1,17 +1,23 @@
 @import "../../../../App.scss";
+@import "../../../../index.scss";
 
-.education {
-    &__wrap {
-        position: relative;
+.folderTree {
+    margin-top: 30px;
+    &__item {
+        list-style-type: none;
+    }
+    &__item:not(:first-child) {
+        margin-top: -90px;
     }
     &__flip {
-        margin-top: -55px;
+        list-style-type: none;
+        margin-top: -75px !important;
         transform: scale(-1);
         span,
         i {
             transform: scale(-1);
         }
-        .education__box {
+        .eduBox {
             &__wrap {
                 border-left: none;
                 border-right: 5px solid $green;
@@ -20,7 +26,7 @@
                 transform: scale(-1);
             }
         }
-        .edu {
+        & .edu {
             &__line {
                 top: 200px;
                 z-index: -1;
@@ -30,32 +36,19 @@
             }
         }
     }
-    &__box {
-        ul {
-            li:not(:first-child) {
-                margin-top: -92px;
-            }
-            list-style-type: none;
-        }
-        position: relative;
-        margin-top: 30px;
-    }
     &__tree {
         position: absolute;
-        top: 55px;
-        left: 500px;
+        top: 155px;
+        left: 675px;
         width: 5px;
         background-color: $green;
         &--exp {
             height: 385px;
+            top: unset;
+            margin-top: 30px;
         }
         &--edu {
-            height: 670px;
+            height: 715px;
         }
     }
-}
-.btn__more {
-    cursor: pointer;
-    font-size: 22px;
-    color: #19762d;
 }

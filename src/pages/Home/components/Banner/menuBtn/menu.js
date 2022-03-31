@@ -3,15 +3,15 @@ import "./menu.scss";
 import $ from "jquery";
 
 const menu = () => {
-  $(".menu-btn").on("click", function () {
-    $(".menu").css("left", "0");
-  });
-  const menu = $(".menu");
-  $(window).on("click", function (event) {
-    if (event.target == $(".menu-maxWidth")) {
-      menu.css("left", "-225px");
-    }
-  });
+  // $(".menu-btn").on("click", function () {
+  //   $(".menu").css("left", "0");
+  // });
+  // const menu = $(".menu");
+  // $(window).on("click", function (event) {
+  //   if (event.target == $(".menu-maxWidth")) {
+  //     menu.css("left", "-225px");
+  //   }
+  // });
   return (
     <div className='menu__maxWidth'>
       <div className='menu'>
@@ -30,7 +30,7 @@ const menu = () => {
               <span>home</span>
             </a>
             <a href='#'>
-              <i class='fa-solid fa-gauge'></i>
+              <i className='fa-solid fa-gauge'></i>
               <span>about</span>
             </a>
             <a href='#'>
@@ -38,7 +38,7 @@ const menu = () => {
               <span>education</span>
             </a>
             <a href='#'>
-              <i class='fa-solid fa-sliders'></i>
+              <i className='fa-solid fa-sliders'></i>
               <span>skills</span>
             </a>
             <a href='#'>
