@@ -2,7 +2,16 @@ import React, { Fragment } from "react";
 import "./eduBox.scss";
 // import MoreInfo from "./moreInfo";
 
-const eduBox = ({ job, jobDesc, time, desc, keywords, icon, more }) => {
+const eduBox = ({ eduData }) => {
+  const {
+    jobName,
+    jobSubTitle,
+    jobTime,
+    jobDesc,
+    keywords,
+    icon,
+    moreClassName,
+  } = eduData;
   function keyWord() {
     if (keywords) {
       return <span>{keywords}</span>;
@@ -10,25 +19,24 @@ const eduBox = ({ job, jobDesc, time, desc, keywords, icon, more }) => {
       return <i className={icon}></i>;
     }
   }
+
   return (
-    <Fragment>
-      <div className='eduBox__wrap'>
-        <div className='eduBox__content'>
-          <div className='eduBox__item'>
-            <p className='job'>{job}</p>
-            <p className='job__desc'>{jobDesc}</p>
-            <p className='time'>{time}</p>
-            <p className='eduBox__desc'>{desc}</p>
-            <div className={`btn__more ${more}`}>
-              <i className='fa-solid fa-ellipsis'></i>
-              {/* <MoreInfo /> */}
-            </div>
+    <div className='eduBox__wrap'>
+      <div className='eduBox__content'>
+        <div className='eduBox__job'>
+          <p className='job__name'>{jobName}</p>
+          <p className='job__subTitle'>{jobSubTitle}</p>
+          <p className='job__time'>{jobTime}</p>
+          <p className='job__desc'>{jobDesc}</p>
+          <div className={`btn__more ${moreClassName}`}>
+            <i className='fa-solid fa-ellipsis'></i>
+            {/* <MoreInfo /> */}
           </div>
         </div>
-        <div className='edu__key'>{keyWord()}</div>
-        <div className='edu__line'></div>
       </div>
-    </Fragment>
+      <div className='edu__key'>{keyWord()}</div>
+      <div className='edu__line'></div>
+    </div>
   );
 };
 

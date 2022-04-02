@@ -1,21 +1,19 @@
 import React from "react";
-import "./education.scss";
-import TitleSection from "../../titleSection";
+import "./Education.scss";
+import TitleSection from "../../TitleSection/TitleSection";
 import { educationData } from "../../../MockData";
 import IconEdu from "../../../../../assets/images/book.png";
 import FolderTree from "../FolderTree";
 
-function Education() {
+const Education = () => {
   return (
-    <>
-      <section className='education'>
-        <div className='container'>
-          <TitleSection title='education' urlIcon={IconEdu} />
-          <FolderTree dataFolderTree={educationData} tree='edu' />
-        </div>
-      </section>
-    </>
+    <section className='education'>
+      <div className='container'>
+        <TitleSection title='education' urlIcon={IconEdu} />
+        <FolderTree dataFolderTree={educationData} tree='edu' />
+      </div>
+    </section>
   );
-}
+};
 
 export default Education;

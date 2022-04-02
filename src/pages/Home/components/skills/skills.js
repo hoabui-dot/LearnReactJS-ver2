@@ -1,7 +1,7 @@
 import React from "react";
 import Field from "./skillsField/skillsField";
 import { professional, personal, software } from "./mockData";
-import TitleSection from "../titleSection";
+import TitleSection from "../TitleSection/TitleSection";
 import SkillsIcon from "../../../../assets/images/mixer.png";
 import "./skills.scss";
 

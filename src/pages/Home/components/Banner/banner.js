@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./card/card";
-import Menu from "./menuBtn/menu";
+import Card from "./Card/Card";
+import Menu from "./MenuBtn/Menu";
 
 function Banner() {
   return (

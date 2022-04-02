@@ -4,13 +4,13 @@ import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import CallIcon from "@mui/icons-material/Call";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import "./card.scss";
+import "./Card.scss";
 
-const card = () => {
+const Card = () => {
   return (
     <section className='card'>
       <div className='container'>
-        <div className='card__wrap boxShadow'>
+        <div className='card__wrap box__shadow'>
           <div className='card__content'>
             <div className='card__name'>
               <h4>bui van hoa</h4>
@@ -81,4 +81,4 @@ const card = () => {
   );
 };
 
-export default card;
+export default Card;

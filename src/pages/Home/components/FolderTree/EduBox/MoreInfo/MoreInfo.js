@@ -1,17 +1,17 @@
 import React from "react";
 import avt from "../../../../../../assets/images/avatar.jpg";
 
-const Index = () => {
+const MoreInfo = () => {
   return (
     <>
       <div className='modal'>
-        <div className='more-content'>
-          <p className='more-title'>graduation at ashton uni</p>
-          <p className='more-time'>Jan 2014 - Mar 2015</p>
+        <div className='more__content'>
+          <p className='more__title'>graduation at ashton uni</p>
+          <p className='more__time'>Jan 2014 - Mar 2015</p>
           <figure>
             <img src={avt} />
           </figure>
-          <p className='more-desc'>
+          <p className='more__description'>
             I have learned a great many things from participating in varsity
             football. It has changed my entire outlook on and attitude toward
             life. Before my freshman year at [high-school], I was shy, had low
@@ -34,4 +34,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default MoreInfo;

@@ -1,17 +1,7 @@
 import React from "react";
-import "./menu.scss";
-import $ from "jquery";
+import "./Menu.scss";
 
 const menu = () => {
-  // $(".menu-btn").on("click", function () {
-  //   $(".menu").css("left", "0");
-  // });
-  // const menu = $(".menu");
-  // $(window).on("click", function (event) {
-  //   if (event.target == $(".menu-maxWidth")) {
-  //     menu.css("left", "-225px");
-  //   }
-  // });
   return (
     <div className='menu__maxWidth'>
       <div className='menu'>
@@ -20,7 +10,7 @@ const menu = () => {
         </button>
         <div className='menu__wrap'>
           <div className='menu__avt'>
-            <div className='menu__avt__wrap'>
+            <div className='avt__wrap'>
               <span>H</span>
             </div>
           </div>

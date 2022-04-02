@@ -1,8 +1,8 @@
 import React from "react";
-import EduBox from "./EduBox/eduBox";
+import EduBox from "./EduBox/EduBox";
 import "./FolderTree.scss";
 
-function FolderTree({ tree, dataFolderTree }) {
+const FolderTree = ({ tree, dataFolderTree }) => {
   return (
     <>
       <div className='folderTree'>
@@ -11,15 +11,7 @@ function FolderTree({ tree, dataFolderTree }) {
           {dataFolderTree.map((data, index) => {
             return (
               <li className={`folderTree__item ${data.flip}`} key={index}>
-                <EduBox
-                  job={data.job}
-                  jobDesc={data.jobDesc}
-                  time={data.time}
-                  desc={data.desc}
-                  keywords={data.keywords}
-                  icon={data.icon}
-                  more={data.more}
-                />
+                <EduBox eduData={data} />
               </li>
             );
           })}
@@ -27,6 +19,6 @@ function FolderTree({ tree, dataFolderTree }) {
       </div>
     </>
   );
-}
+};
 
 export default FolderTree;

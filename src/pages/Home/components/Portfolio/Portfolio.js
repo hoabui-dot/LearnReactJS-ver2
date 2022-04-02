@@ -1,7 +1,8 @@
 import React from "react";
-import TitleSection from "../titleSection";
+import TitleSection from "../TitleSection/TitleSection";
 import PortfolioIcon from "../../../../assets/images/safe.png";
-import SlideShow from "./SlideShow/SlideShow";
+import SlideShow from "./LightBox";
+import "./Portfolio.scss";
 
 function Portfolio() {
   return (

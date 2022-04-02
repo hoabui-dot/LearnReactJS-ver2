@@ -1,10 +1,10 @@
 import React from "react";
-import TitleSection from "../../titleSection";
+import TitleSection from "../../TitleSection/TitleSection";
 import ExpIcon from "../../../../../assets/images/layers.png";
 import FolderTree from "../FolderTree";
 import { experienceData } from "../../../MockData";
 
-function Experience() {
+const Experience = () => {
   return (
     <div className='experience'>
       <div className='container'>
@@ -13,6 +13,6 @@ function Experience() {
       </div>
     </div>
   );
-}
+};
 
 export default Experience;

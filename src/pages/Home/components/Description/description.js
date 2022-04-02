@@ -1,16 +1,16 @@
 import React from "react";
-import "./description.scss";
+import "./Description.scss";
 
 const desc = () => {
-  function handleClickBtn() {
+  const handleClickBtn = () => {
     const btn = document.getElementsByTagName("a");
     btn.style.boxShadow = "rgb(0 0 0 / 13%) 0px 3px 5px inset";
-  }
+  };
   return (
     <section className='description'>
       <div className='container'>
-        <div className='desc boxShadow'>
-          <div className='desc__content'>
+        <div className='description__wrap box__shadow'>
+          <div className='description__content'>
             <p>
               Hello! I’m Bui Van Hoa. Junior Web Developer with over 1 years of
               experience specializing in front end development. Experienced with
@@ -20,9 +20,13 @@ const desc = () => {
               Angular JS. Strong background in management and leadership.
             </p>
           </div>
-          <div className='desc__btn'>
-            <a href='#'>download cv</a>
-            <a href='#'>contact me</a>
+          <div className='description__btn'>
+            <a onClick={handleClickBtn} href='#'>
+              download cv
+            </a>
+            <a onClick={handleClickBtn} href='#'>
+              contact me
+            </a>
           </div>
         </div>
       </div>
