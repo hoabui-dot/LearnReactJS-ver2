@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import "./EduBox.scss";
 // import MoreInfo from "./moreInfo";
 
-const eduBox = ({ eduData }) => {
+const EduBox = ({ eduData }) => {
   const {
     jobName,
     jobSubTitle,
@@ -40,4 +40,4 @@ const eduBox = ({ eduData }) => {
   );
 };
 
-export default eduBox;
+export default EduBox;
