@@ -41,7 +41,8 @@
         justify-content: space-between;
         font-weight: normal;
         @include font-size(14);
-        &__percent {
+
+        .subTitle__percent {
             @include font-size(14);
             font-family: "mulish";
         }

@@ -5,13 +5,12 @@
     margin-top: 30px;
     &__item {
         list-style-type: none;
-    }
-    &__item:not(:first-child) {
-        margin-top: -90px;
+        &:not(:first-child) {
+            margin-top: -75px;
+        }
     }
     &__flip {
         list-style-type: none;
-        margin-top: -75px !important;
         transform: scale(-1);
         span,
         i {
@@ -26,13 +25,13 @@
                 transform: scale(-1);
             }
         }
-        & .edu {
+        .branch {
             &__line {
-                top: 200px;
+                top: 170px;
                 z-index: -1;
             }
             &__key {
-                top: 177px;
+                top: 148px;
             }
         }
     }
@@ -43,12 +42,21 @@
         width: 5px;
         background-color: $green;
         &--exp {
-            height: 385px;
+            height: 280px;
             top: unset;
             margin-top: 30px;
         }
         &--edu {
-            height: 715px;
+            height: 665px;
         }
     }
+}
+.education,
+.experience {
+    position: relative;
+}
+.btn__more {
+    cursor: pointer;
+    @include font-size(22);
+    color: #19762d;
 }

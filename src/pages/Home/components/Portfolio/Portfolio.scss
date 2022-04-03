@@ -20,19 +20,50 @@
 .lightBox {
     &__item {
         position: relative;
-    }
-    &__title {
-        position: absolute;
-        top: 0;
-    }
-    &__content {
-        width: 315px;
-        height: 315px;
-        figure {
-            padding: 2px;
+        display: grid;
+        grid-template-columns: repeat(3fr);
+        grid-template-rows: repeat(2fr);
+        grid-template-areas:
+            "image image image"
+            "image image image";
+        gap: 5px;
+        row-gap: 10px;
+
+        &--logo,
+        &--dribble {
+            margin-bottom: 10px;
         }
-    }
-    .item__content{
-        
+        .item__opacity {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .item__content {
+            overflow: hidden;
+            width: 315px;
+            height: 315px;
+            figure {
+                transition: 0.3s ease-in-out;
+                padding: 2px;
+                &:hover {
+                    transform: scale(1.19);
+                }
+            }
+            grid-area: "image";
+            position: relative;
+            &--bigImg {
+                grid-area: "imageBig";
+                grid-column: 1/3;
+                grid-row: 1/3;
+                width: 640px;
+                height: 640px;
+            }
+            @extend .box__shadow;
+        }
+        .item__text {
+            position: absolute;
+            top: 0;
+        }
     }
 }

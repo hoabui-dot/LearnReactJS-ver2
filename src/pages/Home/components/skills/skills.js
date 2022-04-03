@@ -1,9 +1,9 @@
 import React from "react";
-import Field from "./skillsField/skillsField";
-import { professional, personal, software } from "./mockData";
+import Field from "./SkillsField/SkillsField";
+import { professional, personal, software } from "./MockData";
 import TitleSection from "../TitleSection/TitleSection";
 import SkillsIcon from "../../../../assets/images/mixer.png";
-import "./skills.scss";
+import "./Skills.scss";
 
 const index = () => {
   return (

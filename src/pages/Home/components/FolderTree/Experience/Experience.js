@@ -6,12 +6,12 @@ import { experienceData } from "../../../MockData";
 
 const Experience = () => {
   return (
-    <div className='experience'>
+    <section className='experience'>
       <div className='container'>
         <TitleSection title='experience' urlIcon={ExpIcon} />
         <FolderTree dataFolderTree={experienceData} tree='exp' />
       </div>
-    </div>
+    </section>
   );
 };
 

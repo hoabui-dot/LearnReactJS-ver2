@@ -1,5 +1,5 @@
 import React from "react";
-import "./titleSection.scss";
+import "./TitleSection.scss";
 
 const TitleSection = ({ urlIcon, icon, title }) => {
   return (

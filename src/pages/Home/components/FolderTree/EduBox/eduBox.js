@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "./eduBox.scss";
+import "./EduBox.scss";
 // import MoreInfo from "./moreInfo";
 
 const eduBox = ({ eduData }) => {
@@ -34,8 +34,8 @@ const eduBox = ({ eduData }) => {
           </div>
         </div>
       </div>
-      <div className='edu__key'>{keyWord()}</div>
-      <div className='edu__line'></div>
+      <div className='branch__key'>{keyWord()}</div>
+      <div className='branch__line'></div>
     </div>
   );
 };
