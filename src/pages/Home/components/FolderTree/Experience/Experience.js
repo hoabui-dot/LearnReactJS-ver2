@@ -2,7 +2,7 @@ import React from "react";
 import TitleSection from "../../TitleSection/TitleSection";
 import ExpIcon from "../../../../../assets/images/layers.png";
 import FolderTree from "../FolderTree";
-import { experienceData } from "../../../MockData";
+import { experienceData } from "../../../../../utils/MockData";
 
 const Experience = () => {
   return (

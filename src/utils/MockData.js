@@ -16,7 +16,7 @@ export const educationData = [
     jobDesc:
       "I completed my high school degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.",
     keywords: "g",
-    flip: "folderTree__flip",
+    flip: "eduBox__flip",
   },
   {
     jobName: "Computer Science",
@@ -34,7 +34,7 @@ export const educationData = [
     jobDesc:
       "I completed this degree from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.",
     icon: "fa-solid fa-graduation-cap",
-    flip: "folderTree__flip",
+    flip: "eduBox__flip",
   },
   {
     jobName: "UI/UX Workshop",
@@ -53,7 +53,7 @@ export const educationData = [
     jobDesc:
       "I completed this course from this prestigious institution. I successful completed all the credits without any fallout and got A grade overall.",
     icon: "fa-solid fa-earth-americas",
-    flip: "folderTree__flip",
+    flip: "eduBox__flip",
     moreClassName: "block",
   },
 ];
@@ -75,7 +75,7 @@ export const experienceData = [
     jobDesc:
       "I started my frontend carrier here, spent tow years learning and working in various frontend aspects. I worked on about 40+ projects local and online.",
     keywords: "f",
-    flip: "folderTree__flip",
+    flip: "eduBox__flip",
   },
   {
     job: "UI/UX Expert",
@@ -93,7 +93,63 @@ export const experienceData = [
     jobDesc:
       "I recently joined here, currently working on various development aspects. I already worked on about.",
     keywords: "s",
-    flip: "folderTree__flip",
+    flip: "eduBox__flip",
     moreClassName: "block",
+  },
+];
+
+export const professional = [
+  {
+    language: "HTML5",
+    percent: "90",
+  },
+  {
+    language: "CSS3",
+    percent: "90",
+  },
+  {
+    language: "jQuery",
+    percent: "70",
+  },
+  {
+    language: "PHP",
+    percent: "68",
+  },
+];
+
+export const personal = [
+  {
+    language: "Communication",
+    percent: "80",
+  },
+  {
+    language: "Teamwork",
+    percent: "60",
+  },
+  {
+    language: "Creativity",
+    percent: "70",
+  },
+  {
+    language: "Dedication",
+    percent: "70",
+  },
+];
+export const software = [
+  {
+    language: "Adobe Illustrator",
+    percent: "80",
+  },
+  {
+    language: "Adobe InDesign",
+    percent: "70",
+  },
+  {
+    language: "PHP Storm",
+    percent: "60",
+  },
+  {
+    language: "Dev Console",
+    percent: "80",
   },
 ];

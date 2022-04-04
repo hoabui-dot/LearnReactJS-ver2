@@ -1,7 +1,7 @@
 import React from "react";
 import "./Education.scss";
 import TitleSection from "../../TitleSection/TitleSection";
-import { educationData } from "../../../MockData";
+import { educationData } from "../../../../../utils/MockData";
 import IconEdu from "../../../../../assets/images/book.png";
 import FolderTree from "../FolderTree";
 

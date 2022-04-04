@@ -9,9 +9,11 @@ const index = ({ dataSkills, title }) => {
       </div>
       <ul className='skills__list'>
         {dataSkills.map((data, index) => (
-          <li key={index}>
-            <SkillsItem language={data.language} percent={data.percent} />
-          </li>
+          <SkillsItem
+            key={index}
+            language={data.language}
+            percent={data.percent}
+          />
         ))}
       </ul>
     </div>

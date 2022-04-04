@@ -7,15 +7,11 @@ const FolderTree = ({ tree, dataFolderTree }) => {
     <>
       <div className='folderTree'>
         <div className={`folderTree__tree folderTree__tree--${tree}`}></div>
-        <ul className='folderTree__list'>
-          {dataFolderTree.map((data, index) => {
-            return (
-              <li className={`folderTree__item ${data.flip}`} key={index}>
-                <EduBox eduData={data} />
-              </li>
-            );
-          })}
-        </ul>
+        <div className='folderTree__list'>
+          {dataFolderTree.map((data, index) => (
+            <EduBox key={index} flip={data.flip} eduData={data} />
+          ))}
+        </div>
       </div>
     </>
   );
