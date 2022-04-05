@@ -1,20 +1,18 @@
 import React from "react";
 
-const skillsItem = ({ language, percent }) => {
+const SkillsItem = ({ data }) => {
+  const { language, percent } = data;
   return (
     <li>
-      <div className='skills__item'>
-        <div className='skills__subTitle' data-percent={percent}>
+      <div className='item'>
+        <div className='item__subTitle' data-percent={percent}>
           <p>{language}</p>
           <p className='subTitle__percent'>{percent}%</p>
-          <div
-            className='skills__percent'
-            style={{ width: `${percent}%` }}
-          ></div>
+          <div className='item__percent' style={{ width: `${percent}%` }}></div>
         </div>
       </div>
     </li>
   );
 };
 
-export default skillsItem;
+export default SkillsItem;

@@ -4,7 +4,8 @@ import Banner from "./components/Banner/Banner";
 import Description from "./components/Description/Description";
 import Education from "./components/FolderTree/Education/Education";
 import Experience from "./components/FolderTree/Experience/Experience";
-import Portfolio from "./components/Portfolio/Portfolio";
+// import Portfolio from "./components/Portfolio/Portfolio";
+import Interest from "./components/Interest/Interest";
 import "./Home.scss";
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <Education />
       <Skills />
       <Experience />
+      <Interest />
       {/* <Portfolio /> */}
     </div>
   );

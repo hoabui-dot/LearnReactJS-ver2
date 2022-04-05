@@ -1,7 +1,7 @@
 import React from "react";
 import TitleSection from "../TitleSection/TitleSection";
 import PortfolioIcon from "../../../../assets/images/safe.png";
-import SlideShow from "./LightBox/LighBox";
+import LightBox from "./LightBox/LightBox";
 import "./Portfolio.scss";
 
 function Portfolio() {
@@ -9,7 +9,7 @@ function Portfolio() {
     <section className='portfolio'>
       <div className='container'>
         <TitleSection title='portfolio' urlIcon={PortfolioIcon} />
-        <SlideShow />
+        <LightBox />
       </div>
     </section>
   );

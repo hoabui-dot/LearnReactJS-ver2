@@ -98,7 +98,7 @@ export const experienceData = [
   },
 ];
 
-export const professional = [
+const professional = [
   {
     language: "HTML5",
     percent: "90",
@@ -117,7 +117,7 @@ export const professional = [
   },
 ];
 
-export const personal = [
+const personal = [
   {
     language: "Communication",
     percent: "80",
@@ -135,7 +135,7 @@ export const personal = [
     percent: "70",
   },
 ];
-export const software = [
+const software = [
   {
     language: "Adobe Illustrator",
     percent: "80",
@@ -152,4 +152,10 @@ export const software = [
     language: "Dev Console",
     percent: "80",
   },
+];
+
+export const skills = [
+  { title: "professional", list: professional },
+  { title: "personal", list: personal },
+  { title: "softWare", list: software },
 ];

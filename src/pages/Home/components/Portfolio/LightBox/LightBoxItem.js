@@ -8,11 +8,11 @@ function LightBoxItem({ image, bigImg }) {
       </figure>
       <figcaption>
         <div className='item__text'>
-          <div className='center'>
+          <div className='text__center'>
             <p>lightbox</p>
             <p>images</p>
           </div>
-          <div className='bottom'>
+          <div className='text__bottom'>
             <p>two hover effect for portfolio grid block. it's scale</p>
           </div>
         </div>

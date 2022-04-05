@@ -1,23 +1,20 @@
 import React from "react";
 import SkillsItem from "../SkillsItem/SkillsItem";
 
-const index = ({ dataSkills, title }) => {
+const SkillsField = ({ data }) => {
+  const { title, list } = data;
   return (
-    <div className='skills__field'>
-      <div className='skills__title'>
+    <div className='field'>
+      <div className='field__title'>
         <p>{title}</p>
       </div>
-      <ul className='skills__list'>
-        {dataSkills.map((data, index) => (
-          <SkillsItem
-            key={index}
-            language={data.language}
-            percent={data.percent}
-          />
+      <ul className='field__list'>
+        {list.map((data, index) => (
+          <SkillsItem key={index} data={data} />
         ))}
       </ul>
     </div>
   );
 };
 
-export default index;
+export default SkillsField;
