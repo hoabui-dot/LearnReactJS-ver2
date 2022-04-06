@@ -6,16 +6,18 @@ import Education from "./components/FolderTree/Education/Education";
 import Experience from "./components/FolderTree/Experience/Experience";
 // import Portfolio from "./components/Portfolio/Portfolio";
 import Interest from "./components/Interest/Interest";
+import Pricing from "./components/Pricing/Pricing";
 import "./Home.scss";
 const Index = () => {
   return (
-    <div id='body'>
+    <div className='body'>
       <Banner />
       <Description />
       <Education />
       <Skills />
       <Experience />
       <Interest />
+      <Pricing />
       {/* <Portfolio /> */}
     </div>
   );

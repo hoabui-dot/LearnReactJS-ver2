@@ -154,6 +154,63 @@ const software = [
   },
 ];
 
+export const interest = [
+  {
+    icon: "fa fa-music",
+    name: "music",
+  },
+  {
+    icon: "fa fa-gamepad",
+    name: "gaming",
+  },
+  {
+    icon: "fa fa-camera",
+    name: "photography",
+  },
+  {
+    icon: "fa-solid fa-futbol",
+    name: "football",
+  },
+  {
+    icon: "fa fa-plane",
+    name: "traveling",
+  },
+  {
+    icon: "fa fa-film",
+    name: "movies",
+  },
+];
+
+export const pricing = [
+  {
+    price: "50",
+    level: "starter",
+    brandWidth: "2 GB",
+    diskSpace: "5 GB",
+    databases: "5",
+    domain: "Free",
+    subdomain: "Free",
+  },
+  {
+    price: "200",
+    level: "ultimate",
+    brandWidth: "∞",
+    diskSpace: "∞",
+    databases: "∞",
+    domain: "Free",
+    subdomain: "∞",
+  },
+  {
+    price: "100",
+    level: "business",
+    brandWidth: "5 GB",
+    diskSpace: "25 GB",
+    databases: "10",
+    domain: "Free",
+    subdomain: "15",
+  },
+];
+
 export const skills = [
   { title: "professional", list: professional },
   { title: "personal", list: personal },
