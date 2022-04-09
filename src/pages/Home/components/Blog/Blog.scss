@@ -14,16 +14,38 @@
         grid-template-columns: repeat(2, 1fr);
 
         .item__image {
+            font-family: "mulish";
+            position: relative;
             overflow: hidden;
 
             &:hover img {
                 transform: scale(1.05);
             }
+
             figure {
                 height: 100%;
 
                 img {
                     transition: 0.3s ease-in-out;
+                }
+
+                &:hover .image__infos {
+                    bottom: 10px;
+                }
+
+                .image__infos {
+                    display: flex;
+                    color: white;
+                    position: absolute;
+                    bottom: -15px;
+                    right: 10px;
+                    font-size: 13px;
+                    z-index: 100;
+                    transition: 0.3s ease-in-out;
+
+                    div {
+                        margin-left: 5px;
+                    }
                 }
             }
         }

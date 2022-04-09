@@ -8,15 +8,22 @@ const BlogItem = ({ data, flip }) => {
       <div className='item__image'>
         <figure>
           <img src={image} alt='Blog Images' />
-        </figure>
-        <div className='image__infos'>
-          <div className='user'>
-            <i className='fa fa-user'></i> John Doe
+          <div className='image__infos'>
+            <div className='user'>
+              <i className='fa fa-user'></i> John Doe
+            </div>
+            <div className='time'>
+              <i className='fa-solid fa-clock'></i> August 7, 2020
+            </div>
+            <div className='talk'>
+              <i className='fa-solid fa-comments'></i> 168
+            </div>
           </div>
-        </div>
+        </figure>
       </div>
       <div className='item__content'>
         <div className='job'>
+          s
           <p>
             <a className='job__field' href='#'>
               {fieldWork}

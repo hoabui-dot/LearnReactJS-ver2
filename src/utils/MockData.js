@@ -1,6 +1,9 @@
 import BlogImage1 from "../assets/images/blog-2.png";
 import BlogImage2 from "../assets/images/blog-1.png";
 import BlogImage3 from "../assets/images/blog-3.png";
+import TestImage1 from "../assets/images/client-1.png";
+import TestImage2 from "../assets/images/client-2.png";
+import TestImage3 from "../assets/images/client-3.png";
 
 export const educationData = [
   {
@@ -245,8 +248,38 @@ export const dataBlog = [
   },
 ];
 
+export const testimonials = [
+  {
+    image: TestImage1,
+    description:
+      "I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript. I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.",
+    level: "Mike, CEO, IT World",
+  },
+  {
+    image: TestImage2,
+    description:
+      "I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer.",
+    level: "Mike, CEO, IT World",
+  },
+  {
+    image: TestImage3,
+    description:
+      "I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript. I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.",
+    level: "Mike, CEO, IT World",
+  },
+];
+
 export const skills = [
-  { title: "professional", list: professional },
-  { title: "personal", list: personal },
-  { title: "softWare", list: software },
+  {
+    title: "professional",
+    list: professional,
+  },
+  {
+    title: "personal",
+    list: personal,
+  },
+  {
+    title: "software",
+    list: software,
+  },
 ];

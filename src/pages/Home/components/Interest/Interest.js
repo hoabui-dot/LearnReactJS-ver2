@@ -5,7 +5,6 @@ import "./Interest.scss";
 import { interest } from "../../../../utils/MockData";
 import Enjoy from "./Enjoy/Enjoy";
 
-console.log(interest);
 const Interest = () => {
   function handleBg(value) {
     if ((value + 1) % 2 == 0) return "#06a763";

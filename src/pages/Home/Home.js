@@ -8,8 +8,10 @@ import Experience from "./components/FolderTree/Experience/Experience";
 import Interest from "./components/Interest/Interest";
 import Pricing from "./components/Pricing/Pricing";
 import Blog from "./components/Blog/Blog";
+import Contact from "./components/Contact/Contact";
 import "./Home.scss";
-const Index = () => {
+import Testimonials from "./components/Testimonials/Testimonials";
+const Home = () => {
   return (
     <div className='body'>
       <Banner />
@@ -18,10 +20,12 @@ const Index = () => {
       <Skills />
       <Experience />
       <Interest />
+      {/* <Testimonials /> */}
       <Pricing />
       <Blog />
+      <Contact />
       {/* <Portfolio /> */}
     </div>
   );
 };
-export default Index;
+export default Home;
