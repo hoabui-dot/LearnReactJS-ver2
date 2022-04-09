@@ -40,7 +40,7 @@ const BlogItem = ({ data, flip }) => {
           <p>{workDescription}</p>
         </div>
         <div className='readMore'>
-          <Link to='/more-information'>Read More</Link>
+          <Link to='/single-blog'>Read More</Link>
         </div>
       </div>
     </div>

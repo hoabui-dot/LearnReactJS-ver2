@@ -1,0 +1,29 @@
+@import "../../App.scss";
+@import "../../index.scss";
+
+#btnScroll {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 21px;
+    right: 18px;
+    width: 45px;
+    height: 45px;
+    background-color: $blue;
+    font-size: 22px;
+    transition: 0.3s;
+    color: white;
+    padding: 10px 14px;
+    @extend .box__shadow;
+
+    i {
+        cursor: pointer;
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}

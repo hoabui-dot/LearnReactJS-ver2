@@ -13,7 +13,7 @@ import "./Home.scss";
 import Testimonials from "./components/Testimonials/Testimonials";
 const Home = () => {
   return (
-    <div className='body'>
+    <div id='body'>
       <Banner />
       <Description />
       <Education />
