@@ -7,6 +7,7 @@ import Experience from "./components/FolderTree/Experience/Experience";
 // import Portfolio from "./components/Portfolio/Portfolio";
 import Interest from "./components/Interest/Interest";
 import Pricing from "./components/Pricing/Pricing";
+import Blog from "./components/Blog/Blog";
 import "./Home.scss";
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Experience />
       <Interest />
       <Pricing />
+      <Blog />
       {/* <Portfolio /> */}
     </div>
   );

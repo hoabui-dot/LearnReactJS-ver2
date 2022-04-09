@@ -1,0 +1,95 @@
+@import "../../../../App.scss";
+@import "../../../../index.scss";
+
+.blog {
+    @extend .box__shadow;
+
+    &__wrap {
+        margin-top: 35px;
+        background-color: #fff;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .item__image {
+            overflow: hidden;
+
+            &:hover img {
+                transform: scale(1.05);
+            }
+            figure {
+                height: 100%;
+
+                img {
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+
+        .item__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 45px;
+            font-size: 15px;
+
+            .job {
+                color: gainsboro;
+
+                a {
+                    text-decoration: none;
+                }
+
+                &__field,
+                &__name {
+                    border-bottom: 1px solid gainsboro;
+                    color: $blue;
+                }
+
+                &__working {
+                    color: $dark;
+                }
+            }
+            .description {
+                p:first-child {
+                    font-weight: 500;
+                    margin-top: 16px;
+                    margin-bottom: 8px;
+                    color: #616161;
+                    text-transform: uppercase;
+                    font-size: 23px;
+                }
+
+                p:last-child {
+                    line-height: 22px;
+                    color: #757575;
+                    margin: 0 0 10px;
+                }
+            }
+
+            .readMore {
+                a {
+                    color: $blue;
+                    text-decoration: none;
+                    border-bottom: 1px solid gainsboro;
+                }
+            }
+        }
+    }
+}
+
+.flip {
+    transform: scale(-1);
+
+    .item__image,
+    .item__content {
+        transform: scale(-1);
+        text-align: right;
+    }
+
+    .item__content {
+        padding-right: 45px;
+    }
+}

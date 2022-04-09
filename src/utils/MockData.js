@@ -1,3 +1,7 @@
+import BlogImage1 from "../assets/images/blog-2.png";
+import BlogImage2 from "../assets/images/blog-1.png";
+import BlogImage3 from "../assets/images/blog-3.png";
+
 export const educationData = [
   {
     jobName: "Preparatory Education",
@@ -208,6 +212,36 @@ export const pricing = [
     databases: "10",
     domain: "Free",
     subdomain: "15",
+  },
+];
+
+export const dataBlog = [
+  {
+    image: BlogImage1,
+    fieldWork: "Frontend",
+    jobName: "Design",
+    work: "Material",
+    workTitle: "material design",
+    workDescription:
+      "Web design encompasses many different skills and disciplines in the production of websites.Web design include web graphic design, interface design etc.",
+  },
+  {
+    image: BlogImage2,
+    fieldWork: "Backend",
+    jobName: "Dev",
+    work: "Shortcuts",
+    workTitle: "development shortcut",
+    workDescription:
+      "Web development is a broad term for the work involved in developing a web site for the Internet or an intranet. Now lets get a bit deeper in this topic",
+  },
+  {
+    image: BlogImage3,
+    fieldWork: "Frontend",
+    jobName: "Specs",
+    work: "UI",
+    workTitle: "a good ui",
+    workDescription:
+      "The user interface (UI), in the industrial design field of human–machine interaction, is the space where interactions between humans and machines occur.",
   },
 ];
 
