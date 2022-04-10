@@ -7,7 +7,7 @@ import postIt from "../../../../assets/images/post-it.png";
 
 const Blog = () => {
   return (
-    <section className='section'>
+    <section className='section animated'>
       <div className='container'>
         <TitleSection title='blog' urlIcon={postIt} />
         <div className='blog'>

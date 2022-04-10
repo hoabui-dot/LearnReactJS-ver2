@@ -6,9 +6,9 @@ const TitleSection = ({ urlIcon, icon, title }) => {
     <div className='title'>
       <div className='title__wrap'>
         {icon ? (
-          <i className={icon}></i>
+          <i className={`animated ${icon}`}></i>
         ) : (
-          <img src={urlIcon} alt='Icon Title Section' />
+          <img className='animated' src={urlIcon} alt='Icon Title Section' />
         )}
         <span>{title}</span>
       </div>

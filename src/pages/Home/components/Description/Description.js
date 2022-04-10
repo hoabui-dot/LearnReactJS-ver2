@@ -9,7 +9,7 @@ const desc = () => {
   return (
     <section className='description'>
       <div className='container'>
-        <div className='description__wrap box__shadow'>
+        <div className='animated description__wrap box__shadow'>
           <div className='description__content'>
             <p>
               Hello! I’m Bui Van Hoa. Junior Web Developer with over 1 years of

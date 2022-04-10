@@ -54,11 +54,26 @@
             padding: 10px 37px;
             border: none;
             outline: none;
-            background-color: $green;
+            background-color: var(--main-color);
             color: white;
             text-transform: uppercase;
             font-size: 15px;
             border-radius: 2px;
+        }
+    }
+}
+
+.contact {
+    .producer {
+        text-align: center;
+        margin: 20px auto;
+        color: $words;
+
+        a {
+            text-decoration: none;
+            color: $linkedin;
+            font-weight: bold;
+            font-size: 15px;
         }
     }
 }

@@ -27,7 +27,7 @@
                 align-items: center;
                 color: white;
                 height: 210px;
-                background-color: $green;
+                background-color: var(--main-color);
                 .price {
                     position: relative;
                     .price__text {
@@ -88,7 +88,7 @@
             text-transform: uppercase;
             padding: 10px 13px;
             @include font-size(14);
-            background-color: $green;
+            background-color: var(--main-color);
             color: white;
             border-radius: 2px;
             border: none;

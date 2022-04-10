@@ -37,13 +37,18 @@
 }
 
 .testimonial {
+    &__wrap {
+        margin-top: 35px;
+    }
+
     .item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: $green;
+        background-color: var(--main-color);
         padding: 10px 60px;
+
         &__image {
             width: 130px;
             height: 130px;

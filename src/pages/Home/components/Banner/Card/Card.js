@@ -10,7 +10,7 @@ const Card = () => {
   return (
     <section className='card'>
       <div className='container'>
-        <div className='card__wrap box__shadow'>
+        <div className='card__wrap box__shadow animated'>
           <div className='card__content'>
             <div className='card__name'>
               <h4>bui van hoa</h4>

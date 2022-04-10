@@ -118,6 +118,13 @@
     -webkit-animation-duration: 1s;
 }
 
+// Flex which can have choose justify-content and align-items
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 //limiting of word
 @mixin word-limit($value) {
     word-break: break-all;

@@ -7,7 +7,7 @@ import "./Skills.scss";
 
 const Skills = () => {
   return (
-    <section className='skills'>
+    <section className='skills animated'>
       <div className='container'>
         <TitleSection title='skills' urlIcon={SkillsIcon} />
         <div className='skills__wrap'>

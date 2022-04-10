@@ -8,7 +8,7 @@
 
 // import Loading from "components/Loading/Loading";
 import RouterConfig from "./router";
-import Home from "./pages/Home/Home";
+import Loading from "./components/Loading/Loading";
 import { useEffect, useRef } from "react";
 function App() {
   const content = useRef();
@@ -47,7 +47,7 @@ function App() {
 
   return (
     <>
-      {/* <Loading /> */}
+      <Loading />
       <div ref={content} className='App'>
         <RouterConfig />
       </div>

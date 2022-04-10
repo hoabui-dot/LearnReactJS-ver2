@@ -54,6 +54,9 @@ export default function Contact() {
             </GoogleMap>
           </div>
         </div>
+        <div className='producer'>
+          © Material CV. All right reserved by <a href='#'>Trimatrixlab</a>
+        </div>
       </div>
     </section>
   );

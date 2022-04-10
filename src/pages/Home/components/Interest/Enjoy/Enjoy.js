@@ -3,7 +3,10 @@ import "../../../../../App.scss";
 
 const Enjoy = ({ icon, name, bgColor, color }) => {
   return (
-    <div style={{ background: bgColor, color: color }} className='enjoy__item'>
+    <div
+      style={{ background: bgColor, color: color }}
+      className='enjoy__item animated'
+    >
       <i className={icon}></i>
       <span>{name}</span>
     </div>

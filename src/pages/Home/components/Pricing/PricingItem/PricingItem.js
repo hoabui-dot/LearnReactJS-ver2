@@ -4,7 +4,7 @@ const PricingItem = ({ data }) => {
   const { price, level, brandWidth, diskSpace, databases, domain, subdomain } =
     data;
   return (
-    <div className='item'>
+    <div className='item animated'>
       <div className='item__top'>
         <div className='price'>
           <p className='price__text'>
