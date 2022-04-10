@@ -4,6 +4,9 @@ import BlogImage3 from "../assets/images/blog-3.png";
 import TestImage1 from "../assets/images/client-1.png";
 import TestImage2 from "../assets/images/client-2.png";
 import TestImage3 from "../assets/images/client-3.png";
+import Client1 from "../assets/images/client-1.png";
+import Client2 from "../assets/images/client-2.png";
+import Client3 from "../assets/images/client-3.png";
 
 export const educationData = [
   {
@@ -281,5 +284,26 @@ export const skills = [
   {
     title: "software",
     list: software,
+  },
+];
+
+export const testimonial = [
+  {
+    image: Client1,
+    description:
+      "I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript. I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.",
+    author: "Mike, CEO, IT World.",
+  },
+  {
+    image: Client2,
+    description:
+      "I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer.",
+    author: "Mike, CEO, IT World.",
+  },
+  {
+    image: Client3,
+    description:
+      "I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.",
+    author: "Mike, CEO, IT World.",
   },
 ];

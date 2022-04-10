@@ -10,7 +10,7 @@ import Pricing from "./components/Pricing/Pricing";
 import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
 import "./Home.scss";
-import Testimonials from "./components/Testimonials/Testimonials";
+import Testimonials from "./components/TestSwiper/Swiper";
 const Home = () => {
   return (
     <div id='body'>
@@ -20,7 +20,7 @@ const Home = () => {
       <Skills />
       <Experience />
       <Interest />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Pricing />
       <Blog />
       <Contact />

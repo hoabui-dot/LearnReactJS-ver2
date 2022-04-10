@@ -112,6 +112,12 @@
     max-width: $value;
 }
 
+//Animated
+@mixin animated {
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+
 //limiting of word
 @mixin word-limit($value) {
     word-break: break-all;
