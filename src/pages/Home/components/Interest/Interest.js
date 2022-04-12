@@ -26,15 +26,17 @@ const Interest = () => {
           </div>
           <div className='wrap__enjoy'>
             <div className='enjoy__list'>
-              {interest.map((data, index) => (
-                <Enjoy
-                  bgColor={index % 2 == 0 ? "var(--main-color)" : "#fff"}
-                  color={index % 2 == 0 ? "#fff" : "var(--main-color)"}
-                  key={index}
-                  icon={data.icon}
-                  name={data.name}
-                />
-              ))}
+              {interest &&
+                !!interest &&
+                interest.map((data, index) => (
+                  <Enjoy
+                    bgColor={index % 2 == 0 ? "var(--main-color)" : "#fff"}
+                    color={index % 2 == 0 ? "#fff" : "var(--main-color)"}
+                    key={index}
+                    icon={data.icon}
+                    name={data.name}
+                  />
+                ))}
             </div>
           </div>
         </div>

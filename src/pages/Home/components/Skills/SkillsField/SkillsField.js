@@ -9,9 +9,9 @@ const SkillsField = ({ data }) => {
         <p>{title}</p>
       </div>
       <ul className='field__list'>
-        {list.map((data, index) => (
-          <SkillsItem key={index} data={data} />
-        ))}
+        {list &&
+          !!list &&
+          list.map((data, index) => <SkillsItem key={index} data={data} />)}
       </ul>
     </div>
   );

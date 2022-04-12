@@ -15,6 +15,12 @@
     height: 100%;
     max-width: 970px;
     margin: 0 auto;
+    @include desktop__big {
+        max-width: 720px;
+    }
+    @include md {
+        padding: 0 15px;
+    }
 }
 img {
     width: 100%;
@@ -54,4 +60,41 @@ img {
 .fadeUp {
     animation-name: fadeUp;
     -webkit-animation-name: fadeUp;
+}
+
+.blue {
+    --main-color: #1f5694;
+    --secondary-color: #ff5722;
+}
+.brown {
+    --main-color: #5d4037;
+    --secondary-color: #3f51b5;
+}
+.gray {
+    --main-color: #616161;
+    --secondary-color: #f44336;
+}
+.green {
+    --main-color: #06a763;
+    --secondary-color: #1976d2;
+}
+.pink {
+    --main-color: #d81b60;
+    --secondary-color: #9c27b0;
+}
+.purple {
+    --main-color: #5f1a89;
+    --secondary-color: #e61f63;
+}
+.red {
+    --main-color: #e73a2e;
+    --secondary-color: #ff8f00;
+}
+.teal {
+    --main-color: #038175;
+    --secondary-color: #9c27b0;
+}
+.white {
+    --main-color: #06a763;
+    --secondary-color: #1976d2;
 }

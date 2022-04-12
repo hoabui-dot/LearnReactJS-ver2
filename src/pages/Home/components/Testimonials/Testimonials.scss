@@ -8,7 +8,6 @@
 
 .swiper-slide {
     text-align: center;
-    background: $green;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -39,6 +38,7 @@
 .testimonial {
     &__wrap {
         margin-top: 35px;
+        background-color: var(--main-color);
     }
 
     .item {
@@ -46,7 +46,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--main-color);
         padding: 10px 60px;
 
         &__image {
@@ -64,6 +63,29 @@
             p {
                 margin-top: 25px;
                 line-height: 22px;
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        height: 75px;
+        @extend .box__shadow;
+
+        .slides {
+            width: 500%;
+            display: flex;
+            overflow: hidden;
+
+            .slide {
+                width: 20%;
+                // height: 55px;
+            }
+
+            .slide:not(:first-child) {
+                margin-left: 20px;
             }
         }
     }

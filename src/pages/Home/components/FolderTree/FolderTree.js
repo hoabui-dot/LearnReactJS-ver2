@@ -2,15 +2,22 @@ import React from "react";
 import EduBox from "./EduBox/EduBox";
 import "./FolderTree.scss";
 
-const FolderTree = ({ tree, dataFolderTree }) => {
+const FolderTree = ({ tree, dataFolderTree, setState }) => {
   return (
     <>
       <div className='folderTree'>
         <div className={`folderTree__tree folderTree__tree--${tree}`}></div>
         <div className='folderTree__list'>
-          {dataFolderTree.map((data, index) => (
-            <EduBox key={index} flip={data.flip} eduData={data} />
-          ))}
+          {dataFolderTree &&
+            !!dataFolderTree &&
+            dataFolderTree.map((data, index) => (
+              <EduBox
+                setState={setState}
+                key={index}
+                flip={data.flip}
+                eduData={data}
+              />
+            ))}
         </div>
       </div>
     </>

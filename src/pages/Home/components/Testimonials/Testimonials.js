@@ -5,10 +5,19 @@ import client1 from "../../../../assets/images/client-1.png";
 import client2 from "../../../../assets/images/client-2.png";
 import client3 from "../../../../assets/images/client-3.png";
 import handShake from "../../../../assets/images/handshake.png";
+import logo1 from "../../../../assets/images/logo1.png";
+import logo2 from "../../../../assets/images/logo2.png";
+import logo3 from "../../../../assets/images/logo3.png";
+import logo4 from "../../../../assets/images/logo4.png";
+import logo5 from "../../../../assets/images/logo5.png";
+import logo6 from "../../../../assets/images/logo6.png";
+import logo7 from "../../../../assets/images/logo7.png";
+import logo8 from "../../../../assets/images/logo8.png";
+import logo9 from "../../../../assets/images/logo9.png";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./Swiper.scss";
+import "./Testimonials.scss";
 
 const Testimonials = () => {
   return (
@@ -76,6 +85,38 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+
+        <div className='testimonial__logo'>
+          <div className='slides'>
+            <figure className='slide'>
+              <img src={logo1} alt='Logo Item Image' />
+            </figure>
+            <figure className='slide'>
+              <img src={logo2} alt='Logo Item Image' />
+            </figure>
+            <figure className='slide'>
+              <img src={logo3} alt='Logo Item Image' />
+            </figure>
+            <figure className='slide'>
+              <img src={logo4} alt='Logo Item Image' />
+            </figure>
+            <figure className='slide'>
+              <img src={logo5} alt='Logo Item Image' />
+            </figure>
+            <figure className='slide'>
+              <img src={logo6} alt='Logo Item Image' />
+            </figure>
+            <figure className='slide'>
+              <img src={logo7} alt='Logo Item Image' />
+            </figure>
+            <figure className='slide'>
+              <img src={logo8} alt='Logo Item Image' />
+            </figure>
+            <figure className='slide'>
+              <img src={logo9} alt='Logo Item Image' />
+            </figure>
+          </div>
         </div>
       </div>
     </section>

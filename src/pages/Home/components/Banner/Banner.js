@@ -1,34 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import Card from "./Card/Card";
-import Menu from "./MenuBtn/Menu";
 import "./Banner.scss";
 import ButtonScrollTop from "../../../../components/ButtonScrollTop/Button";
 import logo from "../../../../assets/images/profile.png";
 
 const Banner = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
   const handleOpenMenu = () => {
-    document.getElementById("theMenu").classList.toggle("menu__open");
-    let ele = document.getElementById("menuToggle").getElementsByTagName("i");
-    ele[0].classList.toggle("top__transform");
-    ele[1].classList.toggle("middle__transform");
-    ele[2].classList.toggle("bottom__transform");
+    setToggleMenu(!toggleMenu);
   };
 
   return (
-    <section className='header'>
-      <nav id='theMenu' className='menu'>
+    <section id='banner' className='banner'>
+      <nav id='theMenu' className={toggleMenu ? "menu menu__open" : "menu"}>
         <div id='menu-options' className='menu__wrap'>
           <div className='logo__flat'>
             <img alt='personal-logo' className='img__responsive' src={logo} />
           </div>
           <br />
-          <a href='#home'>
+          <a href='#banner'>
             <i className='title__icon fa fa-user'></i>Home
           </a>
           <a href='#about'>
             <i className='title__icon fa fa-dashboard'></i>About
           </a>
-          <a href='#education'>
+          <a href='#'>
             <i className='title__icon fa fa-graduation-cap'></i>Education
           </a>
           <a href='#skills'>
@@ -59,18 +57,31 @@ const Banner = () => {
 
         <div id='menuToggle' onClick={handleOpenMenu} className=''>
           <div className='toggle-normal'>
-            <i className='material-icons top-bar top__transform'>remove</i>
-            <i className='material-icons middle-bar middle__transform'>
+            <i
+              className={`material-icons top-bar ${
+                toggleMenu ? "top__transform" : ""
+              }`}
+            >
               remove
             </i>
-            <i className='material-icons bottom-bar bottom__transform'>
+            <i
+              className={`material-icons middle-bar ${
+                toggleMenu ? "middle__transform" : ""
+              }`}
+            >
+              remove
+            </i>
+            <i
+              className={`material-icons bottom-bar ${
+                toggleMenu ? "bottom__transform" : ""
+              }`}
+            >
               remove
             </i>
           </div>
         </div>
       </nav>
       <div className='header__background'></div>
-      {/* <Menu /> */}
       <Card />
       <ButtonScrollTop />
     </section>

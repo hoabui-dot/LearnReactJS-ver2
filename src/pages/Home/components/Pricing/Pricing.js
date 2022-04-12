@@ -11,9 +11,11 @@ const Pricing = () => {
       <div className='container'>
         <TitleSection title='pricing' urlIcon={lightNing} />
         <div className='pricing__wrap'>
-          {pricing.map((data, index) => (
-            <PricingItem key={index} data={data} />
-          ))}
+          {pricing &&
+            !!pricing &&
+            pricing.map((data, index) => (
+              <PricingItem key={index} data={data} />
+            ))}
         </div>
       </div>
     </section>

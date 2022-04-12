@@ -10,12 +10,22 @@
         background-color: var(--main-color);
         margin: 0 auto;
         margin-top: -212px;
+        @include md {
+            margin-top: -180px;
+        }
     }
 
     &__content {
         font-family: "raleway__semiBold", sans-serif;
         color: white;
         padding: 55px 40px;
+
+        @include md {
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 65px;
+            padding: unset;
+        }
     }
 
     &__name {
@@ -23,16 +33,30 @@
         h4 {
             text-transform: uppercase;
             font-weight: 900;
-            font-size: 33px;
+            @include font-size(32);
         }
         h6 {
             margin-top: 2px;
             font-size: 18px;
+            @include desktop__big {
+                max-width: 250px;
+            }
+            @include md {
+                max-width: unset;
+            }
         }
     }
 
     &__infos {
         margin-top: 30px;
+
+        @include md {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 240px;
+        }
+
         .infos__list {
             list-style-type: none;
 
@@ -67,6 +91,10 @@
         list-style-type: none;
         display: flex;
 
+        @include md {
+            margin-left: 25px;
+        }
+
         & a {
             font-size: 13.5px;
             width: 37px;
@@ -85,6 +113,10 @@
 
             &:not(:first-child) {
                 margin-left: 16px;
+
+                @include md {
+                    margin-left: 12px;
+                }
             }
         }
     }
@@ -137,12 +169,26 @@
     width: 100px;
     height: 400px;
     clip-path: polygon(0 0, 0% 100%, 98% 100%);
+
+    @include md {
+        display: none;
+    }
 }
 .avatar {
     position: absolute;
     right: 0;
     width: 400px;
     height: 100%;
+    @include md {
+        top: -22%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 .btn__plus {
     position: absolute;
@@ -158,9 +204,17 @@
     outline: none;
     background-color: var(--secondary-color);
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
     i {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    @include desktop__big {
+        left: 44%;
+    }
+    @include md {
+        display: none;
     }
 }

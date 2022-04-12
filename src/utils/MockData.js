@@ -7,6 +7,13 @@ import TestImage3 from "../assets/images/client-3.png";
 import Client1 from "../assets/images/client-1.png";
 import Client2 from "../assets/images/client-2.png";
 import Client3 from "../assets/images/client-3.png";
+import moreInfo from "../assets/images/more-infos.jpg";
+import Big1 from "../assets/images/big-1.jpg";
+import Big2 from "../assets/images/big-2.jpg";
+import Port1 from "../assets/images/portfolio-1.jpg";
+import Port2 from "../assets/images/portfolio-2.jpg";
+import Port3 from "../assets/images/portfolio-3.jpg";
+import Port4 from "../assets/images/portfolio-4.jpg";
 
 export const educationData = [
   {
@@ -69,7 +76,7 @@ export const educationData = [
 ];
 export const experienceData = [
   {
-    job: "Designer",
+    jobName: "Designer",
     jobSubTitle: "RulerSoft",
     jobTime: "Jan 2010 - Mar 2012",
     jobDesc:
@@ -77,9 +84,13 @@ export const experienceData = [
     keywords: "d",
     flip: "",
     moreClassName: "block",
+    moreInfoTitle: "experience at z",
+    moreInfoDate: "Jan 2014 - Mar 2015",
+    moreInfoContent:
+      " I have learned a great many things from participating in varsity football. It has changed my entire outlook on and attitude toward life. Before my freshman year at [high-school], I was shy, had low self-esteem and turnedaway from seemingly impossible challenges. Football has altered all of these qualities. On the first day of freshman practice, the team warmed up with a game of touch football. The players were split up and the game began. However, ",
   },
   {
-    job: "Frontend Developer",
+    jobName: "Frontend Developer",
     jobSubTitle: "Micro IT",
     jobTime: "Jan 2010 - Mar 2012",
     jobDesc:
@@ -88,7 +99,7 @@ export const experienceData = [
     flip: "eduBox__flip",
   },
   {
-    job: "UI/UX Expert",
+    jobName: "UI/UX Expert",
     jobSubTitle: "Libra IT Solutions",
     jobTime: "Jan 2014 - Mar 2015",
     jobDesc:
@@ -97,7 +108,7 @@ export const experienceData = [
     flip: "",
   },
   {
-    job: "Senior Developer",
+    jobName: "Senior Developer",
     jobSubTitle: "WebStyle Technologies",
     jobTime: "Jan 2016 - Continue..",
     jobDesc:
@@ -306,4 +317,48 @@ export const testimonial = [
       "I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.",
     author: "Mike, CEO, IT World.",
   },
+];
+
+export const portfolio = [
+  [
+    {
+      image: Big1,
+      description: "item__content--bigImg",
+    },
+    {
+      image: Port1,
+    },
+    {
+      image: Port2,
+    },
+  ],
+  [
+    { image: Big2, description: "item__content--bigImg" },
+    {
+      image: Port3,
+    },
+    {
+      image: Port4,
+    },
+  ],
+  [
+    {
+      image: Big1,
+    },
+    {
+      image: Big2,
+    },
+    {
+      image: Port1,
+    },
+    {
+      image: Port2,
+    },
+    {
+      image: Port3,
+    },
+    {
+      image: Port4,
+    },
+  ],
 ];

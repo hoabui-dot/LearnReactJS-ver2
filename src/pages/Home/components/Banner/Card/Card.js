@@ -30,7 +30,7 @@ const Card = () => {
                   <i className='fa-brands fa-skype'></i>
                   <span>
                     <a href='https://join.skype.com/invite/xZFCGR1NBK20'>
-                      https://join.skype.com/invite/xZFCGR1NBK20
+                      join.skype.com
                     </a>
                   </span>
                 </li>
@@ -40,7 +40,7 @@ const Card = () => {
                 </li>
                 <li>
                   <LocationOnIcon />
-                  <span>D1 Street 36, 2 District, Ho Chi Minh City</span>
+                  <span>D1 Street, 2 District, HCM</span>
                 </li>
               </ul>
             </div>

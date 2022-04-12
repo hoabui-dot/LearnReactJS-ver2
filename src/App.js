@@ -47,7 +47,7 @@ function App() {
 
   return (
     <>
-      <Loading />
+      {/* <Loading /> */}
       <div ref={content} className='App'>
         <RouterConfig />
       </div>

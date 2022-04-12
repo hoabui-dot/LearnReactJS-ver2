@@ -26,7 +26,7 @@ const button = () => {
 
   return (
     <>
-      <div id='btnScroll' className='animated' onClick={scrollToTop}>
+      <div id='btnScroll' onClick={scrollToTop}>
         <i className='fa-solid fa-angle-up'></i>
       </div>
     </>

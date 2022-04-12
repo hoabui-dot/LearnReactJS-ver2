@@ -11,9 +11,9 @@ const Skills = () => {
       <div className='container'>
         <TitleSection title='skills' urlIcon={SkillsIcon} />
         <div className='skills__wrap'>
-          {skills.map((data, index) => (
-            <Field key={index} data={data} />
-          ))}
+          {skills &&
+            !!skills &&
+            skills.map((data, index) => <Field key={index} data={data} />)}
         </div>
       </div>
     </section>

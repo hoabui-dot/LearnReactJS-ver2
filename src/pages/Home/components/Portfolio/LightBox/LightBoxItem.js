@@ -1,8 +1,9 @@
 import React from "react";
 
-function LightBoxItem({ image, bigImg }) {
+function LightBoxItem({ data }) {
+  const { image, description } = data;
   return (
-    <div className={`item__content ${bigImg} box__shadow`}>
+    <div className={`item__content ${description}`}>
       <figure>
         <img src={image} alt='item Images' />
       </figure>
@@ -16,6 +17,7 @@ function LightBoxItem({ image, bigImg }) {
             <p>two hover effect for portfolio grid block. it's scale</p>
           </div>
         </div>
+        <div className='content__wrap'></div>
       </figcaption>
     </div>
   );

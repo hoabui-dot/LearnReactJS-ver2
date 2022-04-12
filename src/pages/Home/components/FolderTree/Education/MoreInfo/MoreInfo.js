@@ -1,15 +1,22 @@
 import React from "react";
-import avt from "../../../../../../assets/images/avatar.jpg";
-
-const MoreInfo = () => {
+import "./MoreInfo.scss";
+import Image from "../../../../../../assets/images/more-infos.jpg";
+const MoreInfo = ({ setState, state }) => {
   return (
-    <>
-      <div className='modal'>
+    <div
+      onClick={() => setState(false)}
+      id='id01'
+      className={state ? "modal active" : "modal"}
+    >
+      <div className='modal-content fade'>
         <div className='more__content'>
-          <p className='more__title'>graduation at ashton uni</p>
+          <div className='more__close'>
+            <i className='fa fa-close'></i>
+          </div>
+          <h4 className='more__title'>graduation at ashton uni</h4>
           <p className='more__time'>Jan 2014 - Mar 2015</p>
           <figure>
-            <img src={avt} />
+            <img src={Image} alt='More Info Image' />
           </figure>
           <p className='more__description'>
             I have learned a great many things from participating in varsity
@@ -30,7 +37,7 @@ const MoreInfo = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

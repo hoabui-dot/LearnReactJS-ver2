@@ -102,3 +102,16 @@
     }
   }
 }
+
+#color__toggle i {
+  animation: circle 1s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
