@@ -4,7 +4,7 @@ function LightBoxItem({ data }) {
   const { image, description } = data;
   return (
     <div className={`item__content ${description}`}>
-      <figure>
+      <figure className=''>
         <img src={image} alt='item Images' />
       </figure>
       <figcaption>

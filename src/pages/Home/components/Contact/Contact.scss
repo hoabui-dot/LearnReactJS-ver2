@@ -7,6 +7,10 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
 
+    @include desktop__big {
+        grid-template-columns: 1fr;
+    }
+
     .form {
         padding: 40px;
         background-color: #fff;
@@ -80,6 +84,11 @@
 .google__map {
     width: 550px;
     height: 415px;
+
+    @include desktop__big {
+        margin-top: 15px;
+        width: 100%;
+    }
 }
 
 .active {

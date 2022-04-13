@@ -1,15 +1,6 @@
-// import "./App.scss";
-
-// function App() {
-//   return <RouterConfig />;
-// }
-
-// export default App;
-
-// import Loading from "components/Loading/Loading";
 import RouterConfig from "./router";
-import Loading from "./components/Loading/Loading";
 import { useEffect, useRef } from "react";
+import Loading from "./components/Loading/Loading";
 function App() {
   const content = useRef();
 
@@ -47,8 +38,8 @@ function App() {
 
   return (
     <>
-      {/* <Loading /> */}
       <div ref={content} className='App'>
+        <Loading />
         <RouterConfig />
       </div>
     </>

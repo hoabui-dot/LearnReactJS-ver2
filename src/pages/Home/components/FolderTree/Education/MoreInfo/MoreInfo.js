@@ -8,7 +8,7 @@ const MoreInfo = ({ setState, state }) => {
       id='id01'
       className={state ? "modal active" : "modal"}
     >
-      <div className='modal-content fade'>
+      <div className='modal-content fade container'>
         <div className='more__content'>
           <div className='more__close'>
             <i className='fa fa-close'></i>

@@ -23,7 +23,6 @@ const BlogItem = ({ data, flip }) => {
       </div>
       <div className='item__content'>
         <div className='job'>
-          s
           <p>
             <a className='job__field' href='#'>
               {fieldWork}

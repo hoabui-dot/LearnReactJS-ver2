@@ -11,6 +11,7 @@ import Pricing from "./components/Pricing/Pricing";
 import Blog from "./components/Blog/Blog";
 import ChangeColor from "./components/ChangeColor/ChangeColor";
 import Contact from "./components/Contact/Contact";
+import Loading from "../../components/Loading/Loading";
 import "./Home.scss";
 import Testimonials from "./components/Testimonials/Testimonials";
 
@@ -19,6 +20,7 @@ const Home = () => {
 
   return (
     <div id='body' className={`home ${handleColor}`}>
+      <Loading />
       <Banner />
       <Description />
       <Education />

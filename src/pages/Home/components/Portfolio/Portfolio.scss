@@ -122,6 +122,11 @@
             position: relative;
             opacity: 0.8;
 
+            &:hover .content__wrap {
+                top: 0;
+                opacity: 1;
+            }
+
             .content__wrap {
                 position: absolute;
                 top: 50%;
@@ -130,6 +135,7 @@
                 height: 100%;
                 background-color: rgba(0, 0, 0, 0.7);
                 transition: opacity 0.35s, transform 0.35s;
+                opacity: 0;
             }
 
             .item__content:hover .item__content::before {

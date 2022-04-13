@@ -13,6 +13,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+        @include md {
+            grid-template-columns: 1fr;
+        }
+
         .item__image {
             font-family: "mulish";
             position: relative;
@@ -24,6 +28,10 @@
 
             figure {
                 height: 100%;
+
+                @include md {
+                    max-height: 300px;
+                }
 
                 img {
                     transition: 0.3s ease-in-out;
@@ -51,11 +59,14 @@
         }
 
         .item__content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 45px;
+            padding: 65px 45px;
             font-size: 15px;
+
+            @include md {
+                text-align: center;
+                padding-left: 45px;
+                padding-right: 45px;
+            }
 
             .job {
                 color: gainsboro;
@@ -105,10 +116,19 @@
 .flip {
     transform: scale(-1);
 
+    @include md {
+        transform: unset;
+    }
+
     .item__image,
     .item__content {
         transform: scale(-1);
         text-align: right;
+
+        @include md {
+            transform: unset;
+            text-align: center;
+        }
     }
 
     .item__content {

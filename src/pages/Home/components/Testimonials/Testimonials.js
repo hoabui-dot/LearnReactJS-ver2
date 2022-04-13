@@ -30,6 +30,8 @@ const Testimonials = () => {
             pagination={true}
             modules={[Pagination]}
             className='mySwiper'
+            loop={true}
+            autoplay={{ delay: 1000 }}
           >
             <SwiperSlide>
               <div className='item'>
