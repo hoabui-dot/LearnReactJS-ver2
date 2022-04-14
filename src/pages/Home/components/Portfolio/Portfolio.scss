@@ -1,168 +1,29 @@
 @import "../../../../App.scss";
 @import "../../../../index.scss";
 
-.btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: white;
-    cursor: pointer;
+.lightBox__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 
-    &__primary {
+    .btn {
         border: none;
         outline: none;
-        border-radius: 0.25rem;
-        color: var(--color-white);
-        background: var(--color-indigo);
-        box-shadow: var(--shadow-large);
-    }
+        background-color: unset;
+        margin-bottom: 20px;
+        color: $words;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 10px 15px;
 
-    &-circle {
-        position: absolute;
-        width: 6rem;
-        height: 6rem;
-        border-radius: 50%;
-        background: var(--color-white);
-        transform: translate(-50%, -50%) scale(0);
-        animation: scaling 0.35s ease-in-out;
-    }
-}
-
-.btn:hover {
-    background-color: #ddd;
-}
-
-.lightBox__wrap {
-    height: 646px;
-    overflow: hidden;
-
-    .inLeft {
-        -webkit-animation-name: InLeft;
-        animation-name: InLeft;
-        -webkit-animation-duration: 0.8s;
-        animation-duration: 0.8s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
-    .inRight {
-        -webkit-animation-name: InRight;
-        animation-name: InRight;
-        -webkit-animation-duration: 0.8s;
-        animation-duration: 0.8s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
-
-    .lightBox__item {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(3fr);
-        grid-template-rows: repeat(2fr);
-        grid-template-areas:
-            "image image image"
-            "image image image";
-        row-gap: 10px;
-        column-gap: 15px;
-        &:not(:first-child) {
-            margin-top: 10px;
+        &.active {
+            border-bottom: 5px solid var(--secondary-color);
         }
 
-        &:nth-child(2).active {
-            margin-top: -10px;
-        }
-        &:nth-child(3).active {
-            margin-top: -30px;
-        }
-        &:last-child.active {
-            margin-top: -50px;
-        }
-        &:first-child {
-            .item__content:first-child {
-                @extend .inLeft;
-            }
-            .item__content:not(:first-child) {
-                @extend .inRight;
-            }
-        }
-        &:nth-child(2) {
-            .item__content:first-child {
-                @extend .inRight;
-            }
-            .item__content:not(:first-child) {
-                @extend .inLeft;
-            }
-        }
-
-        &:last-child {
-            .item__content:first-child,
-            .item__content:nth-child(4),
-            .item__content:last-child {
-                @extend .inLeft;
-            }
-            .item__content:nth-child(2),
-            .item__content:nth-child(3),
-            .item__content:nth-child(5) {
-                @extend .inRight;
-            }
-        }
-
-        .item__opacity {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-
-        .item__content {
-            position: relative;
-            overflow: hidden;
-            width: 315px;
-            height: 315px;
-            @extend .box__shadow;
-            grid-area: "image";
-            position: relative;
-            opacity: 0.8;
-
-            &:hover .content__wrap {
-                top: 0;
-                opacity: 1;
-            }
-
-            .content__wrap {
-                position: absolute;
-                top: 50%;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.7);
-                transition: opacity 0.35s, transform 0.35s;
-                opacity: 0;
-            }
-
-            .item__content:hover .item__content::before {
-                opacity: 1;
-            }
-
-            figure {
-                transition: 0.3s ease-in-out;
-                padding: 2px;
-
-                &:hover {
-                    transform: scale(1.19);
-                }
-            }
-
-            &--bigImg {
-                grid-area: "imageBig";
-                grid-column: 1/3;
-                grid-row: 1/3;
-                width: 640px;
-                height: 640px;
-            }
-        }
-
-        .item__text {
-            position: absolute;
-            top: 0;
+        &:hover {
+            background-color: rgb(241, 238, 238);
+            border-radius: 3px;
+            color: $words;
         }
     }
 }
@@ -181,48 +42,46 @@
     }
     .lightBox__btn {
         display: flex;
+        justify-content: center;
+        margin-top: 25px;
 
-        .active {
-            background-color: #666;
-            color: white;
-            border-bottom: 5px solid var(--secondary-color);
-        }
-
-        button {
-            color: $words;
+        .btn {
+            border: none;
+            outline: none;
             background-color: unset;
+            margin-bottom: 20px;
+            color: $words;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 10px 15px;
+
+            &.active {
+                border-bottom: 5px solid var(--secondary-color);
+            }
+
+            &:hover {
+                background-color: rgb(241, 238, 238);
+                border-radius: 3px;
+                color: $words;
+            }
         }
     }
-}
 
-@keyframes scaling {
-    to {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(3);
-    }
-}
+    .lightBox__visible {
+        margin: 0 auto;
+        margin-top: 5px;
+        color: var(--secondary-color);
+        font-size: 24px;
+        padding: 13px 30px;
+        border: none;
+        outline: none;
+        background-color: inherit;
+        @extend .box__shadow;
+        transition: all 0.3s ease-out 0s, transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
+            opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
 
-@keyframes InRight {
-    0% {
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-    }
-    100% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes InLeft {
-    0% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    100% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        &:hover {
+            box-shadow: rgb(0 0 0 / 18%) 0px 5px 11px 0px, rgb(0 0 0 / 15%) 0px 4px 15px 0px;
+        }
     }
 }

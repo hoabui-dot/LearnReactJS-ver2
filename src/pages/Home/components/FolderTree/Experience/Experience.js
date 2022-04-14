@@ -5,8 +5,10 @@ import FolderTree from "../FolderTree";
 import MoreInfoExp from "./MoreInfoExp/MoreInfoExp";
 import { experienceData } from "../../../../../utils/MockData";
 
-const Experience = () => {
+const Experience = ({ setValue }) => {
   const [state, setState] = useState(false);
+  const [click, setClick] = useState(true);
+
   return (
     <section className='experience'>
       <div className='container'>
@@ -15,8 +17,9 @@ const Experience = () => {
           setState={setState}
           dataFolderTree={experienceData}
           tree='exp'
+          setValue={setValue}
         />
-        <MoreInfoExp state={state} setState={setState} />
+        <MoreInfoExp setValue={setValue} state={state} setState={setState} />
       </div>
     </section>
   );

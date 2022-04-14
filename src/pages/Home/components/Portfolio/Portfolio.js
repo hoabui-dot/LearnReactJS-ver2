@@ -1,19 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import TitleSection from "../TitleSection/TitleSection";
+import WebsiteTab from "./components/WebsiteTab/WebsiteTab";
+import AllTab from "./components/AllTab/AllTab";
+import DribbleTab from "./components/DribbleTab/DribbleTab";
+import LogoTab from "./components/LogoTab/LogoTab";
 import PortfolioIcon from "../../../../assets/images/safe.png";
-import LightBox from "./LightBox/LightBox";
-import { portfolio } from "../../../../utils/MockData";
 import "./Portfolio.scss";
 
-function Portfolio() {
-  const [click, setClick] = useState(0);
+const Portfolio = () => {
   const [btn, setBtn] = useState(false);
-  const [state, setState] = useState(false);
-
-  useEffect(() => {
-    setState(false);
-  }, []);
-
+  const [click, setClick] = useState("ALL");
   const handleVisible = () => {
     setBtn(!btn);
   };
@@ -25,42 +21,54 @@ function Portfolio() {
         <div className='lightBox animated'>
           <div className='lightBox__btn'>
             <button
-              onClick={() => setClick(0)}
-              className='btn btn__primary ripple active'
+              onClick={() => {
+                setClick("ALL");
+                setBtn(false);
+              }}
+              className={click === "ALL" ? "btn active" : "btn"}
             >
               all
             </button>
-            <button onClick={() => setClick(0)} className='btn'>
+            <button
+              onClick={() => {
+                setClick("LOGO");
+                setBtn(false);
+              }}
+              className={click === "LOGO" ? "btn active" : "btn"}
+            >
               logo
             </button>
-            <button onClick={() => setClick(1)} className='btn'>
+            <button
+              onClick={() => {
+                setClick("DRIBBLE");
+                setBtn(false);
+              }}
+              className={click === "DRIBBLE" ? "btn active" : "btn"}
+            >
               dribble
             </button>
-            <button onClick={() => setClick(2)} className='btn'>
+            <button
+              onClick={() => {
+                setClick("WEBSITES");
+                setBtn(false);
+              }}
+              className={click === "WEBSITES" ? "btn active" : "btn"}
+            >
               websites
             </button>
           </div>
-          <div className={btn ? "lightBox__wrap visible" : "lightBox__wrap"}>
-            {portfolio &&
-              !!portfolio &&
-              portfolio.map((data, index) => (
-                <div
-                  key={index}
-                  className={
-                    click === index ? "lightBox__item active" : "lightBox__item"
-                  }
-                >
-                  {(click === index || btn === true) && (
-                    <LightBox data={data} />
-                  )}
-                </div>
-              ))}
+          <div className='portfolio__wrap'>
+            <div className='lightBox'>
+              {click === "ALL" && btn === false ? <LogoTab /> : ""}
+              {click === "LOGO" && btn === false ? <LogoTab /> : ""}
+              {click === "DRIBBLE" && btn === false ? <DribbleTab /> : ""}
+              {click === "WEBSITES" && btn === false ? <WebsiteTab /> : ""}
+              {btn ? <AllTab /> : ""}
+            </div>
           </div>
           <button
             onClick={handleVisible}
-            className={
-              click !== 0 ? "lightBox__visible hidden" : "lightBox__visible"
-            }
+            className={click !== "ALL" ? "hidden" : "lightBox__visible"}
           >
             <i className={btn ? "fa-solid fa-angles-up" : "fa fa-plus"}></i>
           </button>
@@ -68,5 +76,6 @@ function Portfolio() {
       </div>
     </section>
   );
-}
+};
+
 export default Portfolio;

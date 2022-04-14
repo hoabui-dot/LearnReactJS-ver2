@@ -14,7 +14,7 @@ import logo6 from "../../../../assets/images/logo6.png";
 import logo7 from "../../../../assets/images/logo7.png";
 import logo8 from "../../../../assets/images/logo8.png";
 import logo9 from "../../../../assets/images/logo9.png";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Testimonials.scss";
@@ -27,11 +27,10 @@ const Testimonials = () => {
         <div className='testimonial__wrap animated'>
           <Swiper
             autoHeight={true}
-            pagination={true}
+            pagination={{ clickable: true }}
             modules={[Pagination]}
+            speed={1000}
             className='mySwiper'
-            loop={true}
-            autoplay={{ delay: 1000 }}
           >
             <SwiperSlide>
               <div className='item'>
@@ -90,35 +89,60 @@ const Testimonials = () => {
         </div>
 
         <div className='testimonial__logo'>
-          <div className='slides'>
-            <figure className='slide'>
-              <img src={logo1} alt='Logo Item Image' />
-            </figure>
-            <figure className='slide'>
-              <img src={logo2} alt='Logo Item Image' />
-            </figure>
-            <figure className='slide'>
-              <img src={logo3} alt='Logo Item Image' />
-            </figure>
-            <figure className='slide'>
-              <img src={logo4} alt='Logo Item Image' />
-            </figure>
-            <figure className='slide'>
-              <img src={logo5} alt='Logo Item Image' />
-            </figure>
-            <figure className='slide'>
-              <img src={logo6} alt='Logo Item Image' />
-            </figure>
-            <figure className='slide'>
-              <img src={logo7} alt='Logo Item Image' />
-            </figure>
-            <figure className='slide'>
-              <img src={logo8} alt='Logo Item Image' />
-            </figure>
-            <figure className='slide'>
-              <img src={logo9} alt='Logo Item Image' />
-            </figure>
-          </div>
+          <Swiper
+            modules={[Autoplay]}
+            loop={true}
+            slidesPerView={7}
+            speed={2000}
+            simulateTouch={false}
+            autoplay={{ delay: 2000, enabled: true }}
+          >
+            <SwiperSlide>
+              <figure className='slide'>
+                <img src={logo1} alt='Logo Item Image' />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className='slide'>
+                <img src={logo2} alt='Logo Item Image' />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className='slide'>
+                <img src={logo3} alt='Logo Item Image' />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className='slide'>
+                <img src={logo4} alt='Logo Item Image' />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className='slide'>
+                <img src={logo5} alt='Logo Item Image' />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className='slide'>
+                <img src={logo6} alt='Logo Item Image' />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className='slide'>
+                <img src={logo7} alt='Logo Item Image' />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className='slide'>
+                <img src={logo8} alt='Logo Item Image' />
+              </figure>
+            </SwiperSlide>
+            <SwiperSlide>
+              <figure className='slide'>
+                <img src={logo9} alt='Logo Item Image' />
+              </figure>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </section>

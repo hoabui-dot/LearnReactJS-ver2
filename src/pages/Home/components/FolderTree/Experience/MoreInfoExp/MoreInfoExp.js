@@ -1,10 +1,13 @@
 import React from "react";
 import "../../Education/MoreInfo/MoreInfo.scss";
 
-const MoreInfoExp = ({ setState, state }) => {
+const MoreInfoExp = ({ setState, state, setValue }) => {
   return (
     <div
-      onClick={() => setState(false)}
+      onClick={() => {
+        setState(false);
+        setValue(false);
+      }}
       id='id01'
       className={state ? "modal active" : "modal"}
     >

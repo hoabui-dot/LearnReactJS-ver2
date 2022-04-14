@@ -14,6 +14,7 @@ import Port1 from "../assets/images/portfolio-1.jpg";
 import Port2 from "../assets/images/portfolio-2.jpg";
 import Port3 from "../assets/images/portfolio-3.jpg";
 import Port4 from "../assets/images/portfolio-4.jpg";
+import PortVideo from "../assets/videos/portfolioVideo.mp4";
 
 export const educationData = [
   {
@@ -317,48 +318,4 @@ export const testimonial = [
       "I work with John on several web development projects and I find him to be extremely creative and a technical Front End Developer. Jone expertise involves building complex Responsive Design layouts using HTML 5, CSS3, and JavaScript.",
     author: "Mike, CEO, IT World.",
   },
-];
-
-export const portfolio = [
-  [
-    {
-      image: Big1,
-      description: "item__content--bigImg",
-    },
-    {
-      image: Port1,
-    },
-    {
-      image: Port2,
-    },
-  ],
-  [
-    { image: Big2, description: "item__content--bigImg" },
-    {
-      image: Port3,
-    },
-    {
-      image: Port4,
-    },
-  ],
-  [
-    {
-      image: Big1,
-    },
-    {
-      image: Big2,
-    },
-    {
-      image: Port1,
-    },
-    {
-      image: Port2,
-    },
-    {
-      image: Port3,
-    },
-    {
-      image: Port4,
-    },
-  ],
 ];

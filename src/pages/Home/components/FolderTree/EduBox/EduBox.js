@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./EduBox.scss";
 
-const EduBox = ({ eduData, flip, setState }) => {
+export const SetHeight = React.createContext();
+
+const EduBox = ({ eduData, flip, setState, setValue }) => {
   const {
     jobName,
     jobSubTitle,
@@ -26,6 +28,7 @@ const EduBox = ({ eduData, flip, setState }) => {
               type='button'
               onClick={() => {
                 setState(true);
+                setValue(true);
               }}
               className={`item__more ${moreClassName}`}
             >

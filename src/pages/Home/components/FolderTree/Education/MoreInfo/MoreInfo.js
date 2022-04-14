@@ -1,14 +1,17 @@
 import React from "react";
 import "./MoreInfo.scss";
 import Image from "../../../../../../assets/images/more-infos.jpg";
-const MoreInfo = ({ setState, state }) => {
+const MoreInfo = ({ setState, state, setValue }) => {
   return (
     <div
-      onClick={() => setState(false)}
+      onClick={() => {
+        setState(false);
+        setValue(false);
+      }}
       id='id01'
       className={state ? "modal active" : "modal"}
     >
-      <div className='modal-content fade container'>
+      <div className='modal-content fade'>
         <div className='more__content'>
           <div className='more__close'>
             <i className='fa fa-close'></i>
