@@ -85,6 +85,10 @@
             top: 24px;
             left: -29px;
             background-color: #fff;
+
+            @include md {
+                left: 0;
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import TitleSection from "../TitleSection/TitleSection";
 import WebsiteTab from "./components/WebsiteTab/WebsiteTab";
 import AllTab from "./components/AllTab/AllTab";
@@ -10,6 +10,18 @@ import "./Portfolio.scss";
 const Portfolio = () => {
   const [btn, setBtn] = useState(false);
   const [click, setClick] = useState("ALL");
+  const [clickImg, setClickImg] = useState(false); //set click image to open popup image
+  const [image, setImage] = useState(null);
+
+  const handleClick = e => {
+    setBtn(false);
+    setClick(e.target.innerText);
+  };
+
+  const handlePopup = () => {
+    setClickImg(false);
+  };
+
   const handleVisible = () => {
     setBtn(!btn);
   };
@@ -21,48 +33,52 @@ const Portfolio = () => {
         <div className='lightBox animated'>
           <div className='lightBox__btn'>
             <button
-              onClick={() => {
-                setClick("ALL");
-                setBtn(false);
-              }}
+              onClick={handleClick}
               className={click === "ALL" ? "btn active" : "btn"}
             >
-              all
+              ALL
             </button>
             <button
-              onClick={() => {
-                setClick("LOGO");
-                setBtn(false);
-              }}
+              onClick={handleClick}
               className={click === "LOGO" ? "btn active" : "btn"}
             >
-              logo
+              LOGO
             </button>
             <button
-              onClick={() => {
-                setClick("DRIBBLE");
-                setBtn(false);
-              }}
+              onClick={handleClick}
               className={click === "DRIBBLE" ? "btn active" : "btn"}
             >
-              dribble
+              DRIBBLE
             </button>
             <button
-              onClick={() => {
-                setClick("WEBSITES");
-                setBtn(false);
-              }}
+              onClick={handleClick}
               className={click === "WEBSITES" ? "btn active" : "btn"}
             >
-              websites
+              WEBSITES
             </button>
           </div>
           <div className='portfolio__wrap'>
             <div className='lightBox'>
-              {click === "ALL" && btn === false ? <LogoTab /> : ""}
-              {click === "LOGO" && btn === false ? <LogoTab /> : ""}
-              {click === "DRIBBLE" && btn === false ? <DribbleTab /> : ""}
-              {click === "WEBSITES" && btn === false ? <WebsiteTab /> : ""}
+              {click === "ALL" && btn === false ? (
+                <LogoTab setImage={setImage} setClickImg={setClickImg} />
+              ) : (
+                ""
+              )}
+              {click === "LOGO" && btn === false ? (
+                <LogoTab setImage={setImage} setClickImg={setClickImg} />
+              ) : (
+                ""
+              )}
+              {click === "DRIBBLE" && btn === false ? (
+                <DribbleTab setImage={setImage} setClickImg={setClickImg} />
+              ) : (
+                ""
+              )}
+              {click === "WEBSITES" && btn === false ? (
+                <WebsiteTab setImage={setImage} setClickImg={setClickImg} />
+              ) : (
+                ""
+              )}
               {btn ? <AllTab /> : ""}
             </div>
           </div>
@@ -72,6 +88,17 @@ const Portfolio = () => {
           >
             <i className={btn ? "fa-solid fa-angles-up" : "fa fa-plus"}></i>
           </button>
+        </div>
+        <div
+          onClick={handlePopup}
+          className={clickImg ? "portfolio__popup active" : "portfolio__popup"}
+        >
+          <i className='fa fa-close'></i>
+          <div className='content'>
+            <figure>
+              <img src={image} />
+            </figure>
+          </div>
         </div>
       </div>
     </section>

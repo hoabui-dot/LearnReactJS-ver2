@@ -1,10 +1,15 @@
 import React from "react";
 
-const LogoSlideShowItem = props => {
+const DribbleTabItem = props => {
+  const handleClick = () => {
+    props.setClickImg(true);
+    props.setImage(props.image);
+  };
+
   return (
     <div className='item'>
       <div className='item__content'>
-        <figure>
+        <figure onClick={handleClick}>
           <img src={props.image} alt='item Images' />
           <figcaption>
             <div className='item__title'>
@@ -26,4 +31,4 @@ const LogoSlideShowItem = props => {
   );
 };
 
-export default LogoSlideShowItem;
+export default DribbleTabItem;

@@ -8,21 +8,45 @@ import port4 from "../../../../../../assets/images/portfolio-4.jpg";
 import WebsiteTabItem from "./WebsiteTabItem";
 import "./WebsiteTab.scss";
 
-const LogoSlideShow = () => {
+const WebsiteTab = ({ setClickImg, setImage }) => {
   return (
     <div className='websiteSlideShow'>
       <div className='container'>
         <div className='websiteSlideShow__wrap'>
-          <WebsiteTabItem image={big1} />
-          <WebsiteTabItem image={big2} />
-          <WebsiteTabItem image={port1} />
-          <WebsiteTabItem image={port2} />
-          <WebsiteTabItem image={port3} />
-          <WebsiteTabItem image={port4} />
+          <WebsiteTabItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={big1}
+          />
+          <WebsiteTabItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={big2}
+          />
+          <WebsiteTabItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={port1}
+          />
+          <WebsiteTabItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={port2}
+          />
+          <WebsiteTabItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={port3}
+          />
+          <WebsiteTabItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={port4}
+          />
         </div>
       </div>
     </div>
   );
 };
 
-export default LogoSlideShow;
+export default WebsiteTab;
