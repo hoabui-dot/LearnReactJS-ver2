@@ -2,6 +2,7 @@ import React from "react";
 import big1 from "../../../../../../assets/images/big-1.jpg";
 import port1 from "../../../../../../assets/images/portfolio-1.jpg";
 import port2 from "../../../../../../assets/images/portfolio-2.jpg";
+import video from "../../../../../../assets/videos/portfolioVideo.mp4";
 import LogoTabItem from "./LogoTabItem";
 import "./LogoTab.scss";
 
@@ -20,6 +21,7 @@ const LogoSlideShow = () => {
             title='video'
             description='i designed this for a client for his cafe'
             icon='fa fa-play-circle'
+            video={video}
           />
           <LogoTabItem
             image={port2}

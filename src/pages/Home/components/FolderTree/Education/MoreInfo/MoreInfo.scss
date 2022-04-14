@@ -31,6 +31,8 @@
     box-shadow: rgb(0 0 0 / 50%) 0px 5px 15px;
     -webkit-animation-name: fadeUp;
     animation-name: fadeUp;
+    width: 100%;
+    max-width: 900px;
 }
 .modal__block {
     display: block;
