@@ -15,47 +15,47 @@ const menu = () => {
             </div>
           </div>
           <div className='menu__list'>
-            <a href='#'>
+            <a href='#banner'>
               <i className='fa-solid fa-user-large'></i>
               <span>home</span>
             </a>
-            <a href='#'>
+            <a href='#banner'>
               <i className='fa-solid fa-gauge'></i>
               <span>about</span>
             </a>
-            <a href='#'>
+            <a href='#education'>
               <i className='fa-solid fa-graduation-cap'></i>
               <span>education</span>
             </a>
-            <a href='#'>
+            <a href='#skill'>
               <i className='fa-solid fa-sliders'></i>
               <span>skills</span>
             </a>
-            <a href='#'>
+            <a href='#experience'>
               <i className='fa-solid fa-suitcase'></i>
               <span>experience</span>
             </a>
-            <a href='#'>
+            <a href='#portfolio'>
               <i className='fa-solid fa-box-archive'></i>
               <span>portfolios</span>
             </a>
-            <a href='#'>
+            <a href='#interest'>
               <i className='fa-solid fa-heart'></i>
               <span>interest</span>
             </a>
-            <a href='#'>
+            <a href='#testimonial'>
               <i className='fa-solid fa-users'></i>
               <span>testimonials</span>
             </a>
-            <a href='#'>
+            <a href='#pricing'>
               <i className='fa-solid fa-money-bill'></i>
               <span>pricing</span>
             </a>
-            <a href='#'>
+            <a href='#blog'>
               <i className='fa-solid fa-square-pen'></i>
               <span>blog</span>
             </a>
-            <a href='#'>
+            <a href='#contact'>
               <i className='fa-solid fa-envelope'></i>
               <span>contact</span>
             </a>
