@@ -27,7 +27,7 @@ export default function Contact() {
   if (!isLoaded) return <div>Loading...</div>;
 
   return (
-    <section className='contact'>
+    <section id='contact' className='contact'>
       <div className='container'>
         <TitleSection title='contact' urlIcon={letter} />
         <div className='contact__wrap'>

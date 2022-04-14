@@ -27,7 +27,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section className='portfolio'>
+    <section id='portfolio' className='portfolio'>
       <div className='container'>
         <TitleSection title='portfolio' urlIcon={PortfolioIcon} />
         <div className='lightBox animated'>

@@ -21,7 +21,7 @@ import "./Testimonials.scss";
 
 const Testimonials = () => {
   return (
-    <section className='testimonial'>
+    <section id='testimonial' className='testimonial'>
       <div className='container'>
         <TitleSection title='testimonials' urlIcon={handShake} />
         <div className='testimonial__wrap animated'>

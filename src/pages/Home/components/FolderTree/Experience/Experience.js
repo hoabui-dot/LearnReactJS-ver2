@@ -10,7 +10,7 @@ const Experience = ({ setValue }) => {
   const [click, setClick] = useState(true);
 
   return (
-    <section className='experience'>
+    <section id='experience' className='experience'>
       <div className='container'>
         <TitleSection title='experience' urlIcon={ExpIcon} />
         <FolderTree

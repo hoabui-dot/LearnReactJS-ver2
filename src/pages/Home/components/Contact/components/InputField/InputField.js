@@ -1,11 +1,11 @@
-import './InputField.scss';
+import "./InputField.scss";
 
 function InputField(props) {
   return (
-    <div className={!props.active ? 'input-field' : 'input-field active'}>
+    <div className={!props.active ? "input-field" : "input-field active"}>
       <label className='label'>{props.name}</label>
       <br />
-      {props.inputType === 'input' ? (
+      {props.inputType === "input" ? (
         <input
           type='text'
           className='input'

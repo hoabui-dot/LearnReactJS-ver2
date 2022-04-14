@@ -7,7 +7,7 @@ const desc = () => {
     btn.style.boxShadow = "rgb(0 0 0 / 13%) 0px 3px 5px inset";
   };
   return (
-    <section className='description'>
+    <section id='description' className='description'>
       <div className='container'>
         <div className='animated description__wrap box__shadow'>
           <div className='description__content'>

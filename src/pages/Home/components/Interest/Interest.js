@@ -11,7 +11,7 @@ const Interest = () => {
     return "#fff";
   }
   return (
-    <section className='interest animated'>
+    <section id='interest' className='interest animated'>
       <div className='container'>
         <TitleSection title='interest' urlIcon={heart} />
         <div className='interest__wrap'>

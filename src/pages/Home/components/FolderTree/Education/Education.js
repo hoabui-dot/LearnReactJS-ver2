@@ -9,7 +9,7 @@ import "./Education.scss";
 const Education = ({ setValue }) => {
   const [state, setState] = useState(false);
   return (
-    <section className='education'>
+    <section id='education' className='education'>
       <div className='container'>
         <TitleSection title='education' urlIcon={IconEdu} />
         <FolderTree

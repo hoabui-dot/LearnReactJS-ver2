@@ -10,6 +10,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include custom__sp {
+            flex-direction: column;
+        }
         i {
             color: #1abc9c;
             padding: 13px;
