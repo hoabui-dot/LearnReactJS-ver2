@@ -11,15 +11,13 @@
         grid-template-columns: 1fr;
     }
 
-    .contact-form {
+    .contact__form {
         display: flex;
         flex-direction: column;
         padding: 40px;
         justify-content: center;
-        width: 40%;
-        margin-right: 20px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-        background-color: #fff !important;
+        background-color: #fff;
 
         .input-field {
             position: relative;
@@ -67,7 +65,7 @@
             }
         }
 
-        .button {
+        .form__button {
             background-color: #06a763;
             width: 115px;
             color: #fff;
@@ -88,20 +86,7 @@
             }
         }
     }
-    .contact {
-        .producer {
-            text-align: center;
-            margin: 20px auto;
-            color: $words;
 
-            a {
-                text-decoration: none;
-                color: $linkedin;
-                font-weight: bold;
-                font-size: 15px;
-            }
-        }
-    }
     .google__map {
         width: 550px;
         height: 415px;
@@ -114,5 +99,18 @@
 
     .active {
         top: 0;
+    }
+}
+
+.producer {
+    text-align: center;
+    margin: 20px auto;
+    color: $words;
+
+    a {
+        text-decoration: none;
+        color: $linkedin;
+        font-weight: bold;
+        font-size: 15px;
     }
 }
