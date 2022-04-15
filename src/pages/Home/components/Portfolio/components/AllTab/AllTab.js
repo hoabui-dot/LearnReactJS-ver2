@@ -11,53 +11,89 @@ import DribbleSlideShowItem from "../DribbleTab/DribbleTabItem";
 import WebsiteSlideShowItem from "../WebsiteTab/WebsiteTabItem";
 import "./AllTab.scss";
 
-const AllSlideShow = () => {
+const AllTab = ({ setClickImg, setImage }) => {
   return (
     <div className='AllSlide'>
       <div className='container'>
         <div className='AllSlide__wrap'>
           <LogoSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
             image={big1}
             title='image'
             description='two hover effect for portfolio grid blocks. its scale'
           />
           <LogoSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
             image={port1}
             title='video'
             description='i designed this for a client for his cafe'
             icon='fa fa-play-circle'
           />
           <LogoSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
             image={port2}
             title='image'
             description='two hover effect for portfolio grid blocks. its scale'
           />
           <DribbleSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
             image={big2}
             title='image'
             description='two hover effect for portfolio grid blocks. its scale'
           />
           <DribbleSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
             image={port3}
             title='video'
             description='i designed this for a client for his cafe'
             icon='fa fa-play-circle'
           />
           <DribbleSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
             image={port4}
             title='image'
             description='two hover effect for portfolio grid blocks. its scale'
           />
-          <WebsiteSlideShowItem image={big1} />
-          <WebsiteSlideShowItem image={big2} />
-          <WebsiteSlideShowItem image={port1} />
-          <WebsiteSlideShowItem image={port2} />
-          <WebsiteSlideShowItem image={port3} />
-          <WebsiteSlideShowItem image={port4} />
+          <WebsiteSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={big1}
+          />
+          <WebsiteSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={big2}
+          />
+          <WebsiteSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={port1}
+          />
+          <WebsiteSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={port2}
+          />
+          <WebsiteSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={port3}
+          />
+          <WebsiteSlideShowItem
+            setClickImg={setClickImg}
+            setImage={setImage}
+            image={port4}
+          />
         </div>
       </div>
     </div>
   );
 };
 
-export default AllSlideShow;
+export default AllTab;

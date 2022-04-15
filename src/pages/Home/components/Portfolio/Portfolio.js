@@ -79,7 +79,11 @@ const Portfolio = () => {
               ) : (
                 ""
               )}
-              {btn ? <AllTab /> : ""}
+              {btn ? (
+                <AllTab setImage={setImage} setClickImg={setClickImg} />
+              ) : (
+                ""
+              )}
             </div>
           </div>
           <button
