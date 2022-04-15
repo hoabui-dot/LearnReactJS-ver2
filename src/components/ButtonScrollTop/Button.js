@@ -1,22 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Button.scss";
 
-const button = () => {
+const Button = () => {
+  const [state, setState] = useState(false);
   window.onscroll = function () {
     scrollFunction();
   };
   //Visible Button ScrollTop when user scroll
+
   function scrollFunction() {
     if (
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
     ) {
-      document.getElementById("btnScroll").style.display = "block";
-    } else {
-      document.getElementById("btnScroll").style.display = "none";
-    }
+      setState(true);
+    } else setState(false);
   }
-  // Handle Scroll Activities
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -26,11 +26,14 @@ const button = () => {
 
   return (
     <>
-      <div id='btnScroll' onClick={scrollToTop}>
+      <div
+        onClick={scrollToTop}
+        className={state ? "btnScroll active" : "btnScroll"}
+      >
         <i className='fa-solid fa-angle-up'></i>
       </div>
     </>
   );
 };
 
-export default button;
+export default Button;

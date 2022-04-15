@@ -90,7 +90,7 @@
             transition: all 0.5s ease-in-out;
         }
 
-        .toggle-normal {
+        .toggle__normal {
             font-size: 31px;
 
             i {
@@ -99,14 +99,14 @@
                 color: var(--secondary-color);
             }
 
-            .top-bar {
+            .top__bar {
                 position: absolute;
                 right: 0;
                 top: -6px;
                 transition: 0.3s;
             }
 
-            .middle-bar {
+            .middle__bar {
                 position: absolute;
                 right: 0;
                 top: 0;
@@ -114,7 +114,7 @@
                 transition: 0.8s;
             }
 
-            .bottom-bar {
+            .bottom__bar {
                 position: absolute;
                 right: 0;
                 top: 6px;

@@ -93,10 +93,10 @@ const Portfolio = () => {
           onClick={handlePopup}
           className={clickImg ? "portfolio__popup active" : "portfolio__popup"}
         >
-          <i className='fa fa-close'></i>
           <div className='content'>
             <figure>
               <img src={image} />
+              <i className='fa fa-close'></i>
             </figure>
           </div>
         </div>

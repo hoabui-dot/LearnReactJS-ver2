@@ -32,13 +32,13 @@
 
             &:focus-within {
                 .input {
-                    border-bottom: 2px solid #1976d2;
+                    border-bottom: 2px solid var(--secondary-color);
                     outline: none;
                 }
 
                 .label {
                     top: 0;
-                    color: #1976d2;
+                    color: var(--secondary-color);
                     font-size: 14px;
                 }
             }
@@ -66,7 +66,7 @@
         }
 
         .form__button {
-            background-color: #06a763;
+            background-color: var(--main-color);
             width: 115px;
             color: #fff;
             border-radius: 2px;

@@ -12,13 +12,13 @@ const Loading = () => {
   return (
     <div ref={load} id='loading'>
       <div id='loading__wrap'>
-        <div id='absolute'>
-          <div className='box__holder loadingAnimate bounceInDown'>
-            <span className='load__box'>
-              <span className='box__inner'></span>
+        <div className='absolute'>
+          <div className='absolute__holder loadingAnimate bounceInDown'>
+            <span className='box'>
+              <span></span>
             </span>
           </div>
-          <div id='loading__text'>
+          <div className='absolute__text'>
             <h2>Hoa Bui</h2>
             <h6>Software Engineer &amp; UI/UX Expert</h6>
           </div>
