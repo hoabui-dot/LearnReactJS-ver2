@@ -44,10 +44,11 @@
             }
 
             .label {
+                pointer-events: none;
                 color: #9e9e9e;
                 position: absolute;
-                top: 20px;
-                transition: 0.5s;
+                top: 40%;
+                transition: 0.3s;
                 text-transform: capitalize;
             }
             .input {

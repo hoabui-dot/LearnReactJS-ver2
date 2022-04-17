@@ -1,6 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
 import Card from "./Card/Card";
 import "./Banner.scss";
 import ButtonScrollTop from "../../../../components/ButtonScrollTop/Button";
@@ -8,6 +6,7 @@ import logo from "../../../../assets/images/profile.png";
 
 const Banner = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  
   const handleOpenMenu = () => {
     setToggleMenu(!toggleMenu);
   };

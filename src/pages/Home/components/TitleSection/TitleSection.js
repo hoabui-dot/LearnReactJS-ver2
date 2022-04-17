@@ -8,7 +8,11 @@ const TitleSection = ({ urlIcon, icon, title }) => {
         {icon ? (
           <i className={`animated ${icon}`}></i>
         ) : (
-          <img className='animated' src={urlIcon} alt='Icon Title Section' />
+          <img
+            className='animated fade'
+            src={urlIcon}
+            alt='Icon Title Section'
+          />
         )}
         <span>{title}</span>
       </div>

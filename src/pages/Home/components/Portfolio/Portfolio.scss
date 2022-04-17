@@ -1,35 +1,7 @@
 @import "../../../../App.scss";
 @import "../../../../index.scss";
-
-.lightBox__btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-
-    .btn {
-        border: none;
-        outline: none;
-        background-color: unset;
-        margin-bottom: 20px;
-        color: $words;
-        font-size: 15px;
-        text-transform: uppercase;
-        padding: 10px 15px;
-
-        &.active {
-            border-bottom: 5px solid var(--secondary-color);
-        }
-
-        &:hover {
-            background-color: rgb(241, 238, 238);
-            border-radius: 3px;
-            color: $words;
-        }
-    }
-}
-
 .lightBox {
-    .lightBox__visible {
+    &__visible {
         display: block;
     }
 
@@ -40,7 +12,8 @@
     .visible {
         height: 100%;
     }
-    .lightBox__btn {
+
+    &__btn {
         display: flex;
         justify-content: center;
         margin-top: 25px;
@@ -67,7 +40,7 @@
         }
     }
 
-    .lightBox__visible {
+    &__visible {
         margin: 0 auto;
         margin-top: 5px;
         color: var(--secondary-color);

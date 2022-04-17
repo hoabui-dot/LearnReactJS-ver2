@@ -9,13 +9,13 @@ import "./Portfolio.scss";
 
 const Portfolio = () => {
   const [btn, setBtn] = useState(false);
-  const [click, setClick] = useState("ALL");
+  const [filter, setFilter] = useState("ALL");
   const [clickImg, setClickImg] = useState(false); //set click image to open popup image
   const [image, setImage] = useState(null);
 
   const handleClick = e => {
     setBtn(false);
-    setClick(e.target.innerText);
+    setFilter(e.target.innerText);
   };
 
   const handlePopup = () => {
@@ -34,47 +34,47 @@ const Portfolio = () => {
           <div className='lightBox__btn'>
             <button
               onClick={handleClick}
-              className={click === "ALL" ? "btn active" : "btn"}
+              className={filter === "ALL" ? "btn active" : "btn"}
             >
               ALL
             </button>
             <button
               onClick={handleClick}
-              className={click === "LOGO" ? "btn active" : "btn"}
+              className={filter === "LOGO" ? "btn active" : "btn"}
             >
               LOGO
             </button>
             <button
               onClick={handleClick}
-              className={click === "DRIBBLE" ? "btn active" : "btn"}
+              className={filter === "DRIBBLE" ? "btn active" : "btn"}
             >
               DRIBBLE
             </button>
             <button
               onClick={handleClick}
-              className={click === "WEBSITES" ? "btn active" : "btn"}
+              className={filter === "WEBSITES" ? "btn active" : "btn"}
             >
               WEBSITES
             </button>
           </div>
           <div className='portfolio__wrap'>
             <div className='lightBox'>
-              {click === "ALL" && btn === false ? (
+              {filter === "ALL" && btn === false ? (
                 <LogoTab setImage={setImage} setClickImg={setClickImg} />
               ) : (
                 ""
               )}
-              {click === "LOGO" && btn === false ? (
+              {filter === "LOGO" && btn === false ? (
                 <LogoTab setImage={setImage} setClickImg={setClickImg} />
               ) : (
                 ""
               )}
-              {click === "DRIBBLE" && btn === false ? (
+              {filter === "DRIBBLE" && btn === false ? (
                 <DribbleTab setImage={setImage} setClickImg={setClickImg} />
               ) : (
                 ""
               )}
-              {click === "WEBSITES" && btn === false ? (
+              {filter === "WEBSITES" && btn === false ? (
                 <WebsiteTab setImage={setImage} setClickImg={setClickImg} />
               ) : (
                 ""
@@ -88,7 +88,7 @@ const Portfolio = () => {
           </div>
           <button
             onClick={handleVisible}
-            className={click !== "ALL" ? "hidden" : "lightBox__visible"}
+            className={filter !== "ALL" ? "hidden" : "lightBox__visible"}
           >
             <i className={btn ? "fa-solid fa-angles-up" : "fa fa-plus"}></i>
           </button>
@@ -99,7 +99,7 @@ const Portfolio = () => {
         >
           <div className='content'>
             <figure>
-              <img src={image} />
+              <img src={image} alt='Popup image' />
               <i className='fa fa-close'></i>
             </figure>
           </div>

@@ -30,7 +30,7 @@ const Home = () => {
       <Education setValue={setValue} />
       <Skills />
       <Experience setValue={setValue} />
-      <Portfolio setValue={setValue} />
+      <Portfolio />
       <Interest />
       <Testimonials />
       <Pricing />
