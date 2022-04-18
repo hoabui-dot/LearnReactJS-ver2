@@ -8,20 +8,23 @@ import PortfolioIcon from "../../../../assets/images/safe.png";
 import "./Portfolio.scss";
 
 const Portfolio = () => {
-  const [btn, setBtn] = useState(false);
+  const [btn, setBtn] = useState(false); // set plus button in all slide
   const [filter, setFilter] = useState("ALL");
   const [clickImg, setClickImg] = useState(false); //set click image to open popup image
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState(null); //get image or video to pass in to Popup image
 
+  //Handling click Slide Button
   const handleClick = e => {
     setBtn(false);
     setFilter(e.target.innerText);
   };
 
+  //Handling Click Image to visible Popup images
   const handlePopup = () => {
     setClickImg(false);
   };
 
+  //Handling click Plus Button at all slides
   const handleVisible = () => {
     setBtn(!btn);
   };
@@ -86,6 +89,8 @@ const Portfolio = () => {
               )}
             </div>
           </div>
+
+          {/* Plus Button at All Slide */}
           <button
             onClick={handleVisible}
             className={filter !== "ALL" ? "hidden" : "lightBox__visible"}
@@ -93,6 +98,8 @@ const Portfolio = () => {
             <i className={btn ? "fa-solid fa-angles-up" : "fa fa-plus"}></i>
           </button>
         </div>
+
+        {/* Popup image of Portfolio */}
         <div
           onClick={handlePopup}
           className={clickImg ? "portfolio__popup active" : "portfolio__popup"}

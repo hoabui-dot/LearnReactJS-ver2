@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       content.current.style.display = "block";
-    }, 2000);
+    }, 1000);
 
     let observer = new IntersectionObserver(
       (entries, observer) => {

@@ -91,11 +91,28 @@ const Testimonials = () => {
         <div className='testimonial__logo'>
           <Swiper
             modules={[Autoplay]}
-            loop={true}
             slidesPerView={7}
+            loop={true}
             speed={2000}
             simulateTouch={false}
             autoplay={{ delay: 2000, enabled: true }}
+            breakpoints={{
+              320: {
+                slidesPerView: 2,
+              },
+              375: {
+                slidesPerView: 3,
+              },
+              540: {
+                slidesPerView: 4,
+              },
+              768: {
+                slidesPerView: 5,
+              },
+              993: {
+                slidesPerView: 7,
+              },
+            }}
           >
             <SwiperSlide>
               <figure className='slide'>

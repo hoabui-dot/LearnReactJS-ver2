@@ -5,7 +5,7 @@ import Banner from "./components/Banner/Banner";
 import Description from "./components/Description/Description";
 import Education from "./components/FolderTree/Education/Education";
 import Experience from "./components/FolderTree/Experience/Experience";
-import Portfolio from "./components/PortFolio/Portfolio";
+import Portfolio from "./components/Portfolio/Portfolio";
 import Interest from "./components/Interest/Interest";
 import Pricing from "./components/Pricing/Pricing";
 import Blog from "./components/Blog/Blog";

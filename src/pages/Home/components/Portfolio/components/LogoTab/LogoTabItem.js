@@ -1,28 +1,34 @@
 import React from "react";
 
-const LogoSlideShowItem = props => {
+const LogoSlideShowItem = ({
+  setClickImg,
+  setImage,
+  image,
+  title,
+  description,
+  icon,
+  video,
+}) => {
   const handleClick = () => {
-    props.setClickImg(true);
-    props.setImage(props.image);
+    setClickImg(true);
+    setImage(image);
   };
 
   return (
     <>
       <div className='item__content'>
         <figure onClick={handleClick}>
-          <img src={props.image} alt='item Images' />
+          <img src={image} alt='item Images' />
           <figcaption>
             <div className='item__title'>
               <div className='text__center'>
-                <p className='text__icon'>
-                  {props.icon && <i className={props.icon}></i>}
-                </p>
+                <p className='text__icon'>{icon && <i className={icon}></i>}</p>
                 <span>lightbox</span>
-                <span>{props.title}</span>
+                <span>{title}</span>
               </div>
             </div>
             <div className='item__description'>
-              <p>{props.description}</p>
+              <p>{description}</p>
             </div>
           </figcaption>
         </figure>
