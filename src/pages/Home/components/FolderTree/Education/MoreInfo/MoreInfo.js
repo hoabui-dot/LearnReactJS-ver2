@@ -3,6 +3,7 @@ import "./MoreInfo.scss";
 import Image from "../../../../../../assets/images/more-infos.jpg";
 const MoreInfo = ({ setState, state, setValue }) => {
   const handleClick = () => {
+    document.body.style.overflow = "unset";
     setState(false);
     setValue(false);
   };

@@ -14,6 +14,12 @@ const EduBox = ({ eduData, flip, setState, setValue }) => {
     moreClassName,
   } = eduData;
 
+  const handleShowModal = () => {
+    document.body.style.overflow = "hidden";
+    setState(true);
+    setValue(true);
+  };
+
   return (
     <>
       <div className={`eduBox__item ${flip}`}>
@@ -26,10 +32,7 @@ const EduBox = ({ eduData, flip, setState, setValue }) => {
             <button
               value='true'
               type='button'
-              onClick={() => {
-                setState(true);
-                setValue(true);
-              }}
+              onClick={handleShowModal}
               className={`item__more ${moreClassName}`}
             >
               <i className='fa-solid fa-ellipsis'></i>

@@ -21,10 +21,10 @@ import "./Testimonials.scss";
 
 const Testimonials = () => {
   return (
-    <section id='testimonial' className='testimonial'>
+    <section id='testimonial' className='testimonial animated'>
       <div className='container'>
         <TitleSection title='testimonials' urlIcon={handShake} />
-        <div className='testimonial__wrap animated'>
+        <div className='testimonial__wrap'>
           <Swiper
             autoHeight={true}
             pagination={{ clickable: true }}

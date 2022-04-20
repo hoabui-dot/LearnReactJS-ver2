@@ -12,7 +12,7 @@ const Pricing = () => {
         <TitleSection title='pricing' urlIcon={lightNing} />
         <div className='pricing__wrap'>
           {pricing &&
-            !!pricing &&
+            !!pricing.length &&
             pricing.map((data, index) => (
               <PricingItem key={index} data={data} />
             ))}

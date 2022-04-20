@@ -1,14 +1,14 @@
 import { useState } from "react";
 import "./ChangeColor.scss";
 
-const ColorPalate = ({ setHandleColor }) => {
+const ColorPalate = ({ setIsColor }) => {
   const [toggleColor, setToggleColor] = useState(false);
   const handleOpen = () => {
     setToggleColor(!toggleColor);
   };
 
   const handleChangeColor = e => {
-    setHandleColor(e.target.id);
+    setIsColor(e.target.id);
   };
 
   return (

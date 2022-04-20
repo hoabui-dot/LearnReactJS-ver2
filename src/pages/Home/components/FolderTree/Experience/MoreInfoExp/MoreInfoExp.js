@@ -5,6 +5,7 @@ const MoreInfoExp = ({ setState, state, setValue }) => {
   return (
     <div
       onClick={() => {
+        document.body.style.overflow = "unset";
         setState(false);
         setValue(false);
       }}

@@ -7,7 +7,6 @@ import { experienceData } from "../../../../../utils/MockData";
 
 const Experience = ({ setValue }) => {
   const [state, setState] = useState(false);
-  const [click, setClick] = useState(true);
 
   return (
     <section id='experience' className='experience'>

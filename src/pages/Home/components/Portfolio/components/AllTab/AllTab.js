@@ -1,10 +1,12 @@
 import React from "react";
-import big1 from "../../../../../../assets/images/big-1.jpg";
-import big2 from "../../../../../../assets/images/big-2.jpg";
-import port1 from "../../../../../../assets/images/portfolio-1.jpg";
-import port2 from "../../../../../../assets/images/portfolio-2.jpg";
-import port3 from "../../../../../../assets/images/portfolio-3.jpg";
-import port4 from "../../../../../../assets/images/portfolio-4.jpg";
+import {
+  big1,
+  big2,
+  port1,
+  port2,
+  port3,
+  port4,
+} from "../../../../../../assets/images";
 
 import LogoSlideShowItem from "../WebsiteTab/WebsiteTabItem";
 import DribbleSlideShowItem from "../DribbleTab/DribbleTabItem";
@@ -13,9 +15,9 @@ import "./AllTab.scss";
 
 const AllTab = ({ setClickImg, setImage }) => {
   return (
-    <div className='AllSlide'>
+    <div className='allTab'>
       <div className='container'>
-        <div className='AllSlide__wrap'>
+        <div className='allTab__wrap'>
           <LogoSlideShowItem
             setClickImg={setClickImg}
             setImage={setImage}

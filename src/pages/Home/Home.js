@@ -16,14 +16,11 @@ import "./Home.scss";
 import Testimonials from "./components/Testimonials/Testimonials";
 
 const Home = () => {
-  const [handleColor, setHandleColor] = useState("green");
+  const [isColor, setIsColor] = useState("green");
   const [value, setValue] = useState(false);
 
   return (
-    <div
-      id='body'
-      className={`home ${handleColor} ${value ? "home--height" : ""}`}
-    >
+    <div id='body' className={`home ${isColor} ${value ? "home--height" : ""}`}>
       <Loading />
       <Banner />
       <Description />
@@ -36,7 +33,7 @@ const Home = () => {
       <Pricing />
       <Blog />
       <Contact />
-      <ChangeColor setHandleColor={setHandleColor} />
+      <ChangeColor setIsColor={setIsColor} />
     </div>
   );
 };

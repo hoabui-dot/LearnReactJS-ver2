@@ -1,7 +1,11 @@
 @import "../../../../App.scss";
 @import "../../../../index.scss";
 .lightBox {
+    figure {
+        cursor: pointer;
+    }
     &__visible {
+        cursor: pointer;
         display: block;
     }
 
@@ -19,6 +23,7 @@
         margin-top: 25px;
 
         .btn {
+            cursor: pointer;
             border: none;
             outline: none;
             background-color: unset;

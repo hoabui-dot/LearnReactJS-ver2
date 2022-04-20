@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Card from "./Card/Card";
+import { Link } from "react-scroll";
 import "./Banner.scss";
 import ButtonScrollTop from "../../../../components/ButtonScrollTop/Button";
 import logo from "../../../../assets/images/profile.png";
 
 const Banner = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  
+
   const handleOpenMenu = () => {
     setToggleMenu(!toggleMenu);
   };
@@ -19,39 +20,87 @@ const Banner = () => {
             <img alt='personal logo' className='img__responsive' src={logo} />
           </div>
           <br />
-          <a href='#banner'>
+          <Link to='banner' spy={true} smooth={true} offset={50} duration={500}>
             <i className='title__icon fa fa-user'></i>Home
-          </a>
-          <a href='#description'>
+          </Link>
+          <Link
+            to='description'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             <i className='title__icon fa fa-dashboard'></i>About
-          </a>
-          <a href='#education'>
+          </Link>
+          <Link
+            to='education'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             <i className='title__icon fa fa-graduation-cap'></i>Education
-          </a>
-          <a href='#skill'>
+          </Link>
+          <Link to='skill' spy={true} smooth={true} offset={50} duration={500}>
             <i className='title__icon fa fa-sliders'></i>Skills
-          </a>
-          <a href='#experience'>
+          </Link>
+          <Link
+            to='experience'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             <i className='title__icon fa fa-suitcase'></i>Experience
-          </a>
-          <a href='#portfolio'>
+          </Link>
+          <Link
+            to='portfolio'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             <i className='title__icon fa fa-archive'></i>Portfolios
-          </a>
-          <a href='#interest'>
+          </Link>
+          <Link
+            to='interest'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             <i className='title__icon fa fa-heart'></i>Interest
-          </a>
-          <a href='#testimonial'>
+          </Link>
+          <Link
+            to='testimonial'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             <i className='title__icon fa fa-users'></i>Testimonials
-          </a>
-          <a href='#pricing'>
+          </Link>
+          <Link
+            to='pricing'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             <i className='title__icon fa-regular fa-money-bill-1'></i>Pricing
-          </a>
-          <a href='#blog'>
+          </Link>
+          <Link to='blog' spy={true} smooth={true} offset={50} duration={500}>
             <i className='title__icon fa fa-pencil-square'></i>Blog
-          </a>
-          <a href='#contact'>
+          </Link>
+          <Link
+            to='contact'
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             <i className='title__icon fa fa-envelope'></i>Contact
-          </a>
+          </Link>
         </div>
 
         <div id='menuToggle' onClick={handleOpenMenu} className=''>
