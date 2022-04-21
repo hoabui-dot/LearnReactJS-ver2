@@ -17,6 +17,10 @@
     &.active {
         display: block;
     }
+
+    @include md {
+        padding: 10px;
+    }
 }
 
 .unActive {
@@ -29,12 +33,20 @@
     border: 1px solid #888;
     padding: 20px 40px 40px 40px;
     color: $words;
-    margin: 30px auto;
     box-shadow: rgb(0 0 0 / 50%) 0px 5px 15px;
     -webkit-animation-name: fadeUp;
     animation-name: fadeUp;
     width: 100%;
     max-width: 900px;
+
+    @include desktop__big {
+        max-width: 600px;
+    }
+
+    @include md {
+        max-width: 100%;
+        margin: 0;
+    }
 }
 .modal__block {
     display: block;
@@ -45,9 +57,10 @@
 }
 .more__title {
     text-transform: uppercase;
-    font-size: 33px;
+    font-size: 30px;
     text-align: center;
 }
+
 .more__time {
     font-size: 16px;
     text-align: center;

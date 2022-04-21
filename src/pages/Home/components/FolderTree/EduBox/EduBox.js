@@ -3,7 +3,7 @@ import "./EduBox.scss";
 
 export const SetHeight = React.createContext();
 
-const EduBox = ({ eduData, flip, setState, setValue }) => {
+const EduBox = ({ eduData, flip, setState }) => {
   const {
     jobName,
     jobSubTitle,
@@ -17,9 +17,7 @@ const EduBox = ({ eduData, flip, setState, setValue }) => {
   const handleShowModal = () => {
     document.body.style.overflow = "hidden";
     setState(true);
-    setValue(true);
   };
-
   return (
     <>
       <div className={`eduBox__item ${flip}`}>

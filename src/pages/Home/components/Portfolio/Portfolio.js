@@ -22,6 +22,7 @@ const Portfolio = () => {
   //Handling Click Image to visible Popup images
   const handlePopup = () => {
     setClickImg(false);
+    document.body.style.overflow = "unset";
   };
 
   //Handling click Plus Button at all slides

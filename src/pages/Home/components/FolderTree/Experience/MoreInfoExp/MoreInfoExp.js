@@ -1,13 +1,12 @@
 import React from "react";
 import "../../Education/MoreInfo/MoreInfo.scss";
 
-const MoreInfoExp = ({ setState, state, setValue }) => {
+const MoreInfoExp = ({ setState, state }) => {
   return (
     <div
       onClick={() => {
         document.body.style.overflow = "unset";
         setState(false);
-        setValue(false);
       }}
       id='id01'
       className={state ? "modal active" : "modal"}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import "./Button.scss";
 
 const Button = () => {
@@ -17,21 +18,13 @@ const Button = () => {
     } else setState(false);
   }
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <>
-      <div
-        onClick={scrollToTop}
-        className={state ? "btnScroll active" : "btnScroll"}
-      >
-        <i className='fa-solid fa-angle-up'></i>
-      </div>
+      <Link to='banner' spy={true} smooth={true} offset={50} duration={500}>
+        <div className={state ? "btnScroll active" : "btnScroll"}>
+          <i className='fa-solid fa-angle-up'></i>
+        </div>
+      </Link>
     </>
   );
 };

@@ -6,19 +6,18 @@ import FolderTree from "../FolderTree";
 import MoreInfo from "./MoreInfo/MoreInfo";
 import "./Education.scss";
 
-const Education = ({ setValue }) => {
+const Education = () => {
   const [state, setState] = useState(false);
   return (
     <section id='education' className='education'>
       <div className='container'>
         <TitleSection title='education' urlIcon={IconEdu} />
         <FolderTree
-          setValue={setValue}
           setState={setState}
           dataFolderTree={educationData}
           tree='edu'
         />
-        <MoreInfo setValue={setValue} state={state} setState={setState} />
+        <MoreInfo state={state} setState={setState} />
       </div>
     </section>
   );

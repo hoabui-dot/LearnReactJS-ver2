@@ -2,7 +2,7 @@ import React from "react";
 import EduBox from "./EduBox/EduBox";
 import "./FolderTree.scss";
 
-const FolderTree = ({ tree, dataFolderTree, setState, setValue }) => {
+const FolderTree = ({ tree, dataFolderTree, setState }) => {
   return (
     <>
       <div className='folderTree'>
@@ -12,7 +12,6 @@ const FolderTree = ({ tree, dataFolderTree, setState, setValue }) => {
             !!dataFolderTree &&
             dataFolderTree.map((data, index) => (
               <EduBox
-                setValue={setValue}
                 setState={setState}
                 key={index}
                 flip={data.flip}

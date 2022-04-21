@@ -1,11 +1,10 @@
 import React from "react";
 import "./MoreInfo.scss";
 import Image from "../../../../../../assets/images/more-infos.jpg";
-const MoreInfo = ({ setState, state, setValue }) => {
+const MoreInfo = ({ setState, state }) => {
   const handleClick = () => {
     document.body.style.overflow = "unset";
     setState(false);
-    setValue(false);
   };
 
   return (

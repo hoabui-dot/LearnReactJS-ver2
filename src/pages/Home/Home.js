@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useContext } from "react";
 import Skills from "./components/Skills/Skills";
 import Banner from "./components/Banner/Banner";
 import Description from "./components/Description/Description";
@@ -12,28 +11,28 @@ import Blog from "./components/Blog/Blog";
 import ChangeColor from "./components/ChangeColor/ChangeColor";
 import Contact from "./components/Contact/Contact";
 import Loading from "../../components/Loading/Loading";
-import "./Home.scss";
 import Testimonials from "./components/Testimonials/Testimonials";
+import { ThemContext } from "./components/ChangeColor/ChangeColor";
+import "./Home.scss";
 
 const Home = () => {
-  const [isColor, setIsColor] = useState("green");
-  const [value, setValue] = useState(false);
+  const context = useContext(ThemContext);
 
   return (
-    <div id='body' className={`home ${isColor} ${value ? "home--height" : ""}`}>
+    <div id='body' className={context}>
       <Loading />
       <Banner />
       <Description />
-      <Education setValue={setValue} />
+      <Education />
       <Skills />
-      <Experience setValue={setValue} />
+      <Experience />
       <Portfolio />
       <Interest />
       <Testimonials />
       <Pricing />
       <Blog />
       <Contact />
-      <ChangeColor setIsColor={setIsColor} />
+      <ChangeColor />
     </div>
   );
 };

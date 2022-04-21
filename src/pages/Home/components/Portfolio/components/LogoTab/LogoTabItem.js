@@ -10,6 +10,7 @@ const LogoSlideShowItem = ({
   video,
 }) => {
   const handleClick = () => {
+    document.body.style.overflow = "hidden";
     setClickImg(true);
     setImage(image);
   };
