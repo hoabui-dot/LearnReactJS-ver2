@@ -1,26 +1,26 @@
 import "./InputField.scss";
 
-function InputField(props) {
+function InputField({ active, name, inputType, rows, onChange, value }) {
   return (
-    <div className={!props.active ? "input-field" : "input-field active"}>
-      <label className='label'>{props.name}</label>
+    <div className={!active ? "input-field" : "input-field active"}>
+      <label className='label'>{name}</label>
       <br />
-      {props.inputType === "input" ? (
+      {inputType === "input" ? (
         <input
           type='text'
           className='input'
-          name={props.name}
-          onChange={props.onChange}
-          value={props.value}
+          name={name}
+          onChange={onChange}
+          value={value}
         />
       ) : (
         <textarea
           type='text'
-          rows={props.rows}
+          rows={rows}
           className='input textarea'
-          name={props.name}
-          onChange={props.onChange}
-          value={props.value}
+          name={name}
+          onChange={onChange}
+          value={value}
         />
       )}
     </div>
