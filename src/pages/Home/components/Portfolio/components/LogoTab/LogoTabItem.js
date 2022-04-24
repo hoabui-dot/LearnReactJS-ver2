@@ -1,24 +1,25 @@
 import React from "react";
 
 const LogoSlideShowItem = ({
+  setValuePopup,
   setClickImg,
-  setImage,
   image,
   title,
   description,
   icon,
   video,
+  value,
 }) => {
   const handleClick = () => {
     document.body.style.overflow = "hidden";
     setClickImg(true);
-    setImage(image);
+    setValuePopup(Number(value));
   };
 
   return (
     <>
       <div className='item__content'>
-        <figure onClick={handleClick}>
+        <figure onClick={handleClick} value={value}>
           <img src={image} alt='item Images' />
           <figcaption>
             <div className='item__title'>

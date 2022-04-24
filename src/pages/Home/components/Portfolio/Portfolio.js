@@ -4,6 +4,7 @@ import WebsiteTab from "./components/WebsiteTab/WebsiteTab";
 import AllTab from "./components/AllTab/AllTab";
 import DribbleTab from "./components/DribbleTab/DribbleTab";
 import LogoTab from "./components/LogoTab/LogoTab";
+import Popup from "./components/Popup/Popup";
 import PortfolioIcon from "../../../../assets/images/safe.png";
 import "./Portfolio.scss";
 
@@ -11,18 +12,12 @@ const Portfolio = () => {
   const [btn, setBtn] = useState(false); // set plus button in all slide
   const [filter, setFilter] = useState("ALL");
   const [clickImg, setClickImg] = useState(false); //set click image to open popup image
-  const [image, setImage] = useState(null); //get image or video to pass in to Popup image
+  const [valuePopup, setValuePopup] = useState(null);
 
   //Handling click Slide Button
   const handleClick = e => {
     setBtn(false);
     setFilter(e.target.innerText);
-  };
-
-  //Handling Click Image to visible Popup images
-  const handlePopup = () => {
-    setClickImg(false);
-    document.body.style.overflow = "unset";
   };
 
   //Handling click Plus Button at all slides
@@ -64,27 +59,42 @@ const Portfolio = () => {
           <div className='portfolio__wrap'>
             <div className='lightBox'>
               {filter === "ALL" && btn === false ? (
-                <LogoTab setImage={setImage} setClickImg={setClickImg} />
+                <LogoTab
+                  setValuePopup={setValuePopup}
+                  setClickImg={setClickImg}
+                />
               ) : (
                 ""
               )}
               {filter === "LOGO" && btn === false ? (
-                <LogoTab setImage={setImage} setClickImg={setClickImg} />
+                <LogoTab
+                  setValuePopup={setValuePopup}
+                  setClickImg={setClickImg}
+                />
               ) : (
                 ""
               )}
               {filter === "DRIBBLE" && btn === false ? (
-                <DribbleTab setImage={setImage} setClickImg={setClickImg} />
+                <DribbleTab
+                  setValuePopup={setValuePopup}
+                  setClickImg={setClickImg}
+                />
               ) : (
                 ""
               )}
               {filter === "WEBSITES" && btn === false ? (
-                <WebsiteTab setImage={setImage} setClickImg={setClickImg} />
+                <WebsiteTab
+                  setValuePopup={setValuePopup}
+                  setClickImg={setClickImg}
+                />
               ) : (
                 ""
               )}
               {btn ? (
-                <AllTab setImage={setImage} setClickImg={setClickImg} />
+                <AllTab
+                  setValuePopup={setValuePopup}
+                  setClickImg={setClickImg}
+                />
               ) : (
                 ""
               )}
@@ -100,18 +110,12 @@ const Portfolio = () => {
           </button>
         </div>
 
-        {/* Popup image of Portfolio */}
-        <div
-          onClick={handlePopup}
-          className={clickImg ? "portfolio__popup active" : "portfolio__popup"}
-        >
-          <div className='content'>
-            <figure>
-              <img src={image} alt='Popup image' />
-              <i className='fa fa-close'></i>
-            </figure>
-          </div>
-        </div>
+        <Popup
+          setValuePopup={setValuePopup}
+          valuePopup={valuePopup}
+          clickImg={clickImg}
+          setClickImg={setClickImg}
+        />
       </div>
     </section>
   );

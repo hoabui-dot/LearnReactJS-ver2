@@ -6,38 +6,41 @@ import video from "../../../../../../assets/videos/portfolioVideo.mp4";
 import LogoTabItem from "./LogoTabItem";
 import "./LogoTab.scss";
 
-const LogoSlideShow = ({ setClickImg, setImage }) => {
+const LogoSlideShow = ({ setClickImg, setValuePopup }) => {
   return (
     <div className='logoSlide'>
       <div className='container'>
         <div className='logoSlide__wrap'>
           <div className='item'>
             <LogoTabItem
+              setValuePopup={setValuePopup}
               setClickImg={setClickImg}
-              setImage={setImage}
               image={big1}
               title='image'
               description='two hover effect for portfolio grid blocks. its scale'
+              value='0'
             />
           </div>
           <div className='item'>
             <LogoTabItem
+              setValuePopup={setValuePopup}
               setClickImg={setClickImg}
-              setImage={setImage}
               image={port1}
               title='video'
               description='i designed this for a client for his cafe'
               icon='fa fa-play-circle'
               video={video}
+              value='2'
             />
           </div>
           <div className='item'>
             <LogoTabItem
+              setValuePopup={setValuePopup}
               setClickImg={setClickImg}
-              setImage={setImage}
               image={port2}
               title='image'
               description='two hover effect for portfolio grid blocks. its scale'
+              value='3'
             />
           </div>
         </div>

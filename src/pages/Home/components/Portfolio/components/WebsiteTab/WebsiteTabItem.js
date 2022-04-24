@@ -1,16 +1,16 @@
 import React from "react";
 
-const WebsiteTabItem = props => {
+const WebsiteTabItem = ({ setClickImg, image, setValuePopup, value }) => {
   const handleClick = () => {
-    props.setClickImg(true);
-    props.setImage(props.image);
+    setClickImg(true);
+    setValuePopup(Number(value));
   };
 
   return (
     <div className='item'>
       <div className='item__content'>
-        <figure onClick={handleClick}>
-          <img src={props.image} alt='item Images' />
+        <figure onClick={handleClick} value={value}>
+          <img src={image} alt='item Images' />
           <figcaption>
             <div className='item__title'>
               <div className='text__center'>

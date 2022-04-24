@@ -20,85 +20,37 @@ const Banner = () => {
             <img alt='personal logo' className='img__responsive' src={logo} />
           </div>
           <br />
-          <Link to='banner' spy={true} smooth={true} offset={50} duration={500}>
+          <Link to='banner' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-user'></i>Home
           </Link>
-          <Link
-            to='description'
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to='description' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-dashboard'></i>About
           </Link>
-          <Link
-            to='education'
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to='education' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-graduation-cap'></i>Education
           </Link>
-          <Link to='skill' spy={true} smooth={true} offset={50} duration={500}>
+          <Link to='skill' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-sliders'></i>Skills
           </Link>
-          <Link
-            to='experience'
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to='experience' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-suitcase'></i>Experience
           </Link>
-          <Link
-            to='portfolio'
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to='portfolio' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-archive'></i>Portfolios
           </Link>
-          <Link
-            to='interest'
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to='interest' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-heart'></i>Interest
           </Link>
-          <Link
-            to='testimonial'
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to='testimonial' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-users'></i>Testimonials
           </Link>
-          <Link
-            to='pricing'
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to='pricing' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa-regular fa-money-bill-1'></i>Pricing
           </Link>
-          <Link to='blog' spy={true} smooth={true} offset={50} duration={500}>
+          <Link to='blog' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-pencil-square'></i>Blog
           </Link>
-          <Link
-            to='contact'
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to='contact' spy={true} smooth={true} duration={500}>
             <i className='title__icon fa fa-envelope'></i>Contact
           </Link>
         </div>

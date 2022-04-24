@@ -2,18 +2,25 @@ import React from "react";
 import "../../Education/MoreInfo/MoreInfo.scss";
 
 const MoreInfoExp = ({ setState, state }) => {
+  const handleCloseClick = e => {
+    if (e.target.id === "id01") {
+      document.body.style.overflow = "unset";
+      setState(false);
+    }
+  };
+  const handleCloseButton = () => {
+    document.body.style.overflow = "unset";
+    setState(false);
+  };
   return (
     <div
-      onClick={() => {
-        document.body.style.overflow = "unset";
-        setState(false);
-      }}
+      onClick={handleCloseClick}
       id='id01'
       className={state ? "modal active" : "modal"}
     >
-      <div className='modal__content fade'>
+      <div className='modal__content'>
         <div className='more__content'>
-          <div className='more__close'>
+          <div onClick={handleCloseButton} className='more__close'>
             <i className='fa fa-close'></i>
           </div>
           <h4 className='more__title'>EXPERIENCE AT Z</h4>

@@ -12,7 +12,7 @@
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1050;
+    z-index: 2000;
 
     &.active {
         display: block;
@@ -27,17 +27,18 @@
     display: none;
 }
 .modal__content {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     border: 1px solid #888;
     padding: 20px 40px 40px 40px;
     color: $words;
     box-shadow: rgb(0 0 0 / 50%) 0px 5px 15px;
-    -webkit-animation-name: fadeUp;
-    animation-name: fadeUp;
     width: 100%;
     max-width: 900px;
+    animation: fadeScroll 0.4s linear;
 
     @include desktop__big {
         max-width: 600px;

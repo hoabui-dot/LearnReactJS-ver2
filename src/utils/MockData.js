@@ -319,3 +319,24 @@ export const testimonial = [
     author: "Mike, CEO, IT World.",
   },
 ];
+
+export const popup = [
+  {
+    image: Big1,
+  },
+  {
+    image: Big2,
+  },
+  {
+    image: Port1,
+  },
+  {
+    image: Port2,
+  },
+  {
+    image: Port3,
+  },
+  {
+    image: Port4,
+  },
+];

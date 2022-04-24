@@ -23,6 +23,7 @@
         margin-top: 25px;
 
         .btn {
+            display: inline-block;
             cursor: pointer;
             border: none;
             outline: none;
@@ -33,6 +34,10 @@
             text-transform: uppercase;
             padding: 10px 15px;
 
+            @include custom__sp {
+                font-size: 14px;
+                padding: 9px 14px;
+            }
             &.active {
                 border-bottom: 5px solid var(--secondary-color);
             }

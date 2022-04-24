@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MoreInfo.scss";
 import Image from "../../../../../../assets/images/more-infos.jpg";
 const MoreInfo = ({ setState, state }) => {
-  const handleClick = () => {
+  const handleClick = e => {
+    if (e.target.id === "id01") {
+      document.body.style.overflow = "unset";
+      setState(false);
+    }
+  };
+
+  const handleCloseClick = () => {
     document.body.style.overflow = "unset";
     setState(false);
   };
@@ -13,9 +20,9 @@ const MoreInfo = ({ setState, state }) => {
       id='id01'
       className={state ? "modal active" : "modal"}
     >
-      <div className='modal__content fade'>
+      <div className='modal__content'>
         <div className='more__content'>
-          <div className='more__close'>
+          <div onClick={handleCloseClick} className='more__close'>
             <i className='fa fa-close'></i>
           </div>
           <h4 className='more__title'>graduation at ashton uni</h4>

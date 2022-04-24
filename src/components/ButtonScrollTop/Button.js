@@ -20,7 +20,7 @@ const Button = () => {
 
   return (
     <>
-      <Link to='banner' spy={true} smooth={true} offset={50} duration={500}>
+      <Link to='banner' spy={true} smooth={true} offset={0} duration={500}>
         <div className={state ? "btnScroll active" : "btnScroll"}>
           <i className='fa-solid fa-angle-up'></i>
         </div>
