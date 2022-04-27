@@ -7,14 +7,8 @@ import TestImage3 from "../assets/images/client-3.png";
 import Client1 from "../assets/images/client-1.png";
 import Client2 from "../assets/images/client-2.png";
 import Client3 from "../assets/images/client-3.png";
-import moreInfo from "../assets/images/more-infos.jpg";
-import Big1 from "../assets/images/big-1.jpg";
-import Big2 from "../assets/images/big-2.jpg";
-import Port1 from "../assets/images/portfolio-1.jpg";
-import Port2 from "../assets/images/portfolio-2.jpg";
-import Port3 from "../assets/images/portfolio-3.jpg";
-import Port4 from "../assets/images/portfolio-4.jpg";
-import PortVideo from "../assets/videos/portfolioVideo.mp4";
+import portVideo from "../assets/videos/portfolioVideo.mp4";
+import { big1, big2, port1, port2, port3, port4 } from "../assets/images";
 
 export const educationData = [
   {
@@ -322,21 +316,21 @@ export const testimonial = [
 
 export const popup = [
   {
-    image: Big1,
+    image: big1,
   },
   {
-    image: Big2,
+    image: big2,
   },
   {
-    image: Port1,
+    video: portVideo,
   },
   {
-    image: Port2,
+    image: port2,
   },
   {
-    image: Port3,
+    image: port3,
   },
   {
-    image: Port4,
+    image: port4,
   },
 ];

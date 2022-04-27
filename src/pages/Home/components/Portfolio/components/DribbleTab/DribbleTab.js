@@ -1,7 +1,5 @@
 import React from "react";
-import big2 from "../../../../../../assets/images/big-2.jpg";
-import port3 from "../../../../../../assets/images/portfolio-3.jpg";
-import port4 from "../../../../../../assets/images/portfolio-4.jpg";
+import { big2, port3, port4 } from "../../../../../../assets/images";
 import DribbleTabItem from "./DribbleTabItem";
 import "./DribbleTab.scss";
 
@@ -22,9 +20,8 @@ const DribbleTab = ({ setClickImg, setValuePopup }) => {
             setValuePopup={setValuePopup}
             setClickImg={setClickImg}
             image={port3}
-            title='video'
+            title='image'
             description='i designed this for a client for his cafe'
-            icon='fa fa-play-circle'
             value='4'
           />
           <DribbleTabItem

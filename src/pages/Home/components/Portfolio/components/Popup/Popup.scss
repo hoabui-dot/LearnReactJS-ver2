@@ -1,5 +1,6 @@
 @import "../../../../../../App.scss";
 @import "../../../../../../index.scss";
+@import "~video-react/styles/scss/video-react"; // or import scss
 .popup {
     &__modal {
         display: none;
@@ -28,19 +29,39 @@
         align-items: center;
         &__wrap {
             position: relative;
-            background-color: #fefefe;
-            border: 1px solid #888;
-            color: $words;
-            box-shadow: rgb(0 0 0 / 50%) 0px 5px 15px;
-            width: 100%;
-            height: 100%;
-            max-width: 600px;
-            max-height: 600px;
-            figure {
+            background-color: unset;
+            @include desktop__big {
+                margin: 0 20px;
+            }
+
+            .image {
+                box-shadow: rgb(0 0 0 / 50%) 0px 5px 15px;
+                width: 100%;
+                height: 100%;
+                max-width: 600px;
+                max-height: 600px;
+                animation: flipToZero 0.3s linear;
+
                 img {
-                    width: 600px;
-                    height: 600px;
                     object-fit: cover;
+                }
+            }
+            .video {
+                width: 700px;
+                height: 370px;
+
+                @include md {
+                    width: 600px;
+                    height: auto;
+                }
+                @include custom__value(600px) {
+                    width: 500px;
+                }
+                @include custom__value(500px) {
+                    width: 400px;
+                }
+                @include custom__value(400px) {
+                    width: 300px;
                 }
             }
         }
@@ -49,16 +70,33 @@
     &__btn {
         div {
             position: absolute;
-            top: 50%;
+            top: 45%;
             font-size: 30px;
             padding: 20px 15px;
+            z-index: 5;
+
             &:hover {
                 background-color: rgba(0, 0, 0, 0.4);
                 color: white;
             }
+
+            @include custom__sp {
+                top: 42%;
+            }
+
+            @include custom__value(415px) {
+                top: 40%;
+            }
         }
         .next {
-            right: -2px;
+            right: 0;
+        }
+    }
+    &__image {
+        display: none;
+
+        &.active {
+            display: block;
         }
     }
 }

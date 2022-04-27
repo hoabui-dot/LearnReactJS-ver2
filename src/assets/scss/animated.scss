@@ -3191,3 +3191,13 @@
     opacity: 1;
   }
 }
+@keyframes fadeCloseScroll {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-700px);
+    opacity: 0;
+  }
+}

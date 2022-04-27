@@ -1,6 +1,7 @@
 import React from "react";
 import "./Popup.scss";
 import { popup } from "../../../../../../utils/MockData";
+import { Player } from "video-react";
 
 const Popup = ({ clickImg, setClickImg, valuePopup, setValuePopup }) => {
   const length = popup.length;
@@ -36,15 +37,26 @@ const Popup = ({ clickImg, setClickImg, valuePopup, setValuePopup }) => {
             </div>
             {popup &&
               !!popup.length &&
-              popup.map((data, index) => (
-                <figure key={index}>
-                  {index === valuePopup ? (
-                    <img key={index} src={data.image} alt='Popup Images' />
+              popup.map((data, index) =>
+                index === valuePopup ? (
+                  index !== 2 ? (
+                    <figure
+                      className={
+                        index === valuePopup ? "image active" : "image"
+                      }
+                      key={index}
+                    >
+                      <img src={data.image} alt='Popup Images' />
+                    </figure>
                   ) : (
-                    ""
-                  )}
-                </figure>
-              ))}
+                    <div className='video' key={index}>
+                      <Player src={data.video} />
+                    </div>
+                  )
+                ) : (
+                  ""
+                )
+              )}
           </div>
         </div>
       </div>
