@@ -1,4 +1,4 @@
-import "./InputField.scss";
+import React from "react";
 
 function InputField({ active, name, inputType, rows, onChange, value }) {
   return (
