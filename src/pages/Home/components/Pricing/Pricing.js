@@ -7,7 +7,7 @@ import "./Pricing.scss";
 
 const Pricing = () => {
   return (
-    <section id='pricing' className='pricing'>
+    <section className='pricing animated'>
       <div className='container'>
         <TitleSection title='pricing' urlIcon={lightNing} />
         <div className='pricing__wrap'>
