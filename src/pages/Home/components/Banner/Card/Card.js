@@ -63,7 +63,7 @@ const Card = () => {
               >
                 <i className='fa-brands fa-linkedin-in'></i>
               </a>
-              <a className='icon__wf'>
+              <a href='#' className='icon__wf'>
                 <i className='fa-solid fa-wifi'></i>
               </a>
             </div>

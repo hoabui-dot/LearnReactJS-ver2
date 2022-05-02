@@ -1,5 +1,5 @@
 import RouterConfig from "./router";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Loading from "./components/Loading/Loading";
 function App() {
   const content = useRef();

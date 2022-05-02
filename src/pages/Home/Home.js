@@ -12,7 +12,6 @@ import ChangeColor from "./components/ChangeColor/ChangeColor";
 import Contact from "./components/Contact/Contact";
 import Loading from "../../components/Loading/Loading";
 import Testimonials from "./components/Testimonials/Testimonials";
-import { ThemContext } from "./components/ChangeColor/ChangeColor";
 import "./Home.scss";
 
 const Home = () => {
