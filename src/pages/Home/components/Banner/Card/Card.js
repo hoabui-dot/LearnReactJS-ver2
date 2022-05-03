@@ -63,9 +63,9 @@ const Card = () => {
               >
                 <i className='fa-brands fa-linkedin-in'></i>
               </a>
-              <a href='#' className='icon__wf'>
+              <button className='icon__wf'>
                 <i className='fa-solid fa-wifi'></i>
-              </a>
+              </button>
             </div>
           </div>
           <div className='triangle'></div>

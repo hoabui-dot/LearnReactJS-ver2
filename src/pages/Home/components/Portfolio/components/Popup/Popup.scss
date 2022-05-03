@@ -1,7 +1,9 @@
-@import "../../../../../../App.scss";
-@import "../../../../../../index.scss";
-@import "~video-react/styles/scss/video-react"; // or import scss
+@import '../../../../../../App.scss';
+@import '../../../../../../index.scss';
+@import '~video-react/styles/scss/video-react'; // or import scss
 .popup {
+    position: relative;
+
     &__modal {
         display: none;
         position: fixed;
@@ -68,15 +70,14 @@
     }
 
     &__btn {
-        div {
+        .btn {
             position: absolute;
             top: 45%;
-            font-size: 30px;
-            padding: 20px 15px;
+            font-size: 40px;
             z-index: 5;
+            left: 5%;
 
             &:hover {
-                background-color: rgba(0, 0, 0, 0.4);
                 color: white;
             }
 
@@ -87,9 +88,11 @@
             @include custom__value(415px) {
                 top: 40%;
             }
-        }
-        .next {
-            right: 0;
+
+            &--next {
+                left: unset;
+                right: 5%;
+            }
         }
     }
     &__image {

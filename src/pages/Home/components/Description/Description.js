@@ -21,12 +21,8 @@ const desc = () => {
             </p>
           </div>
           <div className='description__btn'>
-            <a onClick={handleClickBtn} href='#'>
-              download cv
-            </a>
-            <a onClick={handleClickBtn} href='#'>
-              contact me
-            </a>
+            <button onClick={handleClickBtn}>download cv</button>
+            <button onClick={handleClickBtn}>contact me</button>
           </div>
         </div>
       </div>

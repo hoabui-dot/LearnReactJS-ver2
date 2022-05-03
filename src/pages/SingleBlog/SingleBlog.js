@@ -17,7 +17,7 @@ const BlogPage = () => {
           <div className='content__left'>
             <div className='left__wrap'>
               <figure>
-                <img src={blogImg} alt='Blog Image' />
+                <img src={blogImg} alt='Blog' />
               </figure>
               <div className='header'>
                 <div className='header__wrap'>
@@ -28,7 +28,7 @@ const BlogPage = () => {
                 <div className='header__author'>
                   <div className='tag'>
                     <figure>
-                      <img src={avtJohnDoe} alt='Author Avatar Image' />
+                      <img src={avtJohnDoe} alt='Author Avatar' />
                     </figure>
                     John Doe
                   </div>
@@ -135,7 +135,7 @@ const BlogPage = () => {
           </div>
         </div>
         <div className='producer'>
-          © Material CV. All right reserved by <a href='#'>Trimatrixlab</a>
+          © Material CV. All right reserved by <button>Trimatrixlab</button>
         </div>
       </div>
     </div>

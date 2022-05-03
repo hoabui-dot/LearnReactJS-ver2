@@ -1,5 +1,5 @@
-@import "../../../../App.scss";
-@import "../../../../index.scss";
+@import '../../../../App.scss';
+@import '../../../../index.scss';
 
 .blog {
     @extend .box__shadow;
@@ -18,7 +18,7 @@
         }
 
         .item__image {
-            font-family: "mulish";
+            font-family: 'mulish';
             position: relative;
             overflow: hidden;
 
@@ -70,6 +70,12 @@
 
             .job {
                 color: gainsboro;
+
+                button {
+                    cursor: pointer;
+                    border: none;
+                    background-color: transparent;
+                }
 
                 a {
                     text-decoration: none;

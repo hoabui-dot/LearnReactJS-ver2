@@ -1,5 +1,5 @@
-@import "../../../../App.scss";
-@import "../../../../index.scss";
+@import '../../../../App.scss';
+@import '../../../../index.scss';
 
 .contact__wrap {
     margin-top: 35px;
@@ -108,10 +108,12 @@
     margin: 20px auto;
     color: $words;
 
-    a {
+    button {
+        cursor: pointer;
         text-decoration: none;
         color: $linkedin;
         font-weight: bold;
         font-size: 15px;
+        border: none;
     }
 }

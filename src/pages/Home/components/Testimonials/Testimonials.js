@@ -35,7 +35,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className='item'>
                 <figure className='item__image'>
-                  <img src={client1} alt='Item Image' />
+                  <img src={client1} alt='Item' />
                 </figure>
                 <div className='item__content'>
                   <p>
@@ -56,7 +56,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className='item'>
                 <figure className='item__image'>
-                  <img src={client2} alt='Item Image' />
+                  <img src={client2} alt='Item' />
                 </figure>
                 <div className='item__content'>
                   <p>
@@ -71,7 +71,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className='item'>
                 <figure className='item__image'>
-                  <img src={client3} alt='Item Image' />
+                  <img src={client3} alt='Item' />
                 </figure>
                 <div className='item__content'>
                   <p>
@@ -116,47 +116,47 @@ const Testimonials = () => {
           >
             <SwiperSlide>
               <figure className='slide'>
-                <img src={logo1} alt='Logo Item Image' />
+                <img src={logo1} alt='Logo Item' />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
               <figure className='slide'>
-                <img src={logo2} alt='Logo Item Image' />
+                <img src={logo2} alt='Logo Item' />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
               <figure className='slide'>
-                <img src={logo3} alt='Logo Item Image' />
+                <img src={logo3} alt='Logo Item' />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
               <figure className='slide'>
-                <img src={logo4} alt='Logo Item Image' />
+                <img src={logo4} alt='Logo Item' />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
               <figure className='slide'>
-                <img src={logo5} alt='Logo Item Image' />
+                <img src={logo5} alt='Logo Item' />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
               <figure className='slide'>
-                <img src={logo6} alt='Logo Item Image' />
+                <img src={logo6} alt='Logo Item' />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
               <figure className='slide'>
-                <img src={logo7} alt='Logo Item Image' />
+                <img src={logo7} alt='Logo Item' />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
               <figure className='slide'>
-                <img src={logo8} alt='Logo Item Image' />
+                <img src={logo8} alt='Logo Item' />
               </figure>
             </SwiperSlide>
             <SwiperSlide>
               <figure className='slide'>
-                <img src={logo9} alt='Logo Item Image' />
+                <img src={logo9} alt='Logo Item' />
               </figure>
             </SwiperSlide>
           </Swiper>

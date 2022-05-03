@@ -6,10 +6,10 @@ import { interest } from "../../../../utils/MockData";
 import Enjoy from "./Enjoy/Enjoy";
 
 const Interest = () => {
-  function handleBg(value) {
-    if ((value + 1) % 2 == 0) return "var(--main-color)";
-    return "#fff";
-  }
+  // function handleBg(value) {
+  //   if ((value + 1) % 2 === 0) return "var(--main-color)";
+  //   return "#fff";
+  // }
   return (
     <section id='interest' className='interest animated'>
       <div className='container'>
@@ -30,8 +30,8 @@ const Interest = () => {
                 !!interest &&
                 interest.map((data, index) => (
                   <Enjoy
-                    bgColor={index % 2 == 0 ? "var(--main-color)" : "#fff"}
-                    color={index % 2 == 0 ? "#fff" : "var(--main-color)"}
+                    bgColor={index % 2 === 0 ? "var(--main-color)" : "#fff"}
+                    color={index % 2 === 0 ? "#fff" : "var(--main-color)"}
                     key={index}
                     icon={data.icon}
                     name={data.name}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./MoreInfo.scss";
 import Image from "../../../../../../assets/images/more-infos.jpg";
 const MoreInfo = ({ setState, state }) => {
@@ -28,7 +28,7 @@ const MoreInfo = ({ setState, state }) => {
           <h4 className='more__title'>graduation at ashton uni</h4>
           <p className='more__time'>Jan 2014 - Mar 2015</p>
           <figure>
-            <img src={Image} alt='More Info Image' />
+            <img src={Image} alt='More Info' />
           </figure>
           <p className='more__description'>
             I have learned a great many things from participating in varsity

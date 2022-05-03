@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./EduBox.scss";
 
 export const SetHeight = React.createContext();

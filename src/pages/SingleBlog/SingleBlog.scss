@@ -1,5 +1,5 @@
-@import "../../App.scss";
-@import "../../index.scss";
+@import '../../App.scss';
+@import '../../index.scss';
 
 * {
     box-sizing: border-box;
@@ -12,8 +12,8 @@ body {
 }
 
 .singleBlog {
-    font-family: "raleway";
-    background: url("../../assets/images/header-background.png");
+    font-family: 'raleway';
+    background: url('../../assets/images/header-background.png');
     width: 100%;
     height: 370px;
     background-size: cover;
@@ -119,7 +119,7 @@ body {
                         }
                     }
                     svg {
-                        background: url("../../assets//images/single-blog-icon.svg");
+                        background: url('../../assets//images/single-blog-icon.svg');
                         background-repeat: no-repeat;
                         background-position: center center;
                         background-size: 80px;
@@ -232,7 +232,9 @@ body {
         text-align: center;
         color: $words;
 
-        a {
+        button {
+            cursor: pointer;
+            border: none;
             text-decoration: none;
             color: $linkedin;
             font-weight: bold;

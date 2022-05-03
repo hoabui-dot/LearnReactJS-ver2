@@ -1,5 +1,5 @@
-@import "../../../../../App.scss";
-@import "../../../../../index.scss";
+@import '../../../../../App.scss';
+@import '../../../../../index.scss';
 
 .card {
     &__wrap {
@@ -16,7 +16,7 @@
     }
 
     &__content {
-        font-family: "raleway__semiBold", sans-serif;
+        font-family: 'raleway__semiBold', sans-serif;
         color: white;
         padding: 55px 40px;
 
@@ -93,6 +93,12 @@
 
         @include md {
             margin-left: 25px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
         }
 
         a {

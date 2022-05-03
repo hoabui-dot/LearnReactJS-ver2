@@ -23,16 +23,9 @@ const BlogItem = ({ data, flip }) => {
       </div>
       <div className='item__content'>
         <div className='job'>
-          <p>
-            <a className='job__field' href='#'>
-              {fieldWork}
-            </a>{" "}
-            /{" "}
-            <a className='job__name' href='#'>
-              {jobName}
-            </a>{" "}
-            / <span className='job__working'>{work}</span>
-          </p>
+          <button className='job__field'>{fieldWork}</button> /{" "}
+          <button className='job__name'>{jobName}</button> /{" "}
+          <span className='job__working'>{work}</span>
         </div>
         <div className='description'>
           <p>{workTitle}</p>

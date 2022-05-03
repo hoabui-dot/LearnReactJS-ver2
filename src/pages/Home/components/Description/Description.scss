@@ -1,5 +1,5 @@
-@import "../../../../App.scss";
-@import "../../../../index.scss";
+@import '../../../../App.scss';
+@import '../../../../index.scss';
 
 .description {
     &__wrap {
@@ -24,7 +24,9 @@
             flex-direction: column;
         }
 
-        a {
+        button {
+            cursor: pointer;
+            border: none;
             background: var(--main-color);
             width: 180px;
             text-align: center;

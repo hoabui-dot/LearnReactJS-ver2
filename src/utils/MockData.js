@@ -8,7 +8,7 @@ import Client1 from "../assets/images/client-1.png";
 import Client2 from "../assets/images/client-2.png";
 import Client3 from "../assets/images/client-3.png";
 import portVideo from "../assets/videos/portfolioVideo.mp4";
-import { big1, big2, port1, port2, port3, port4 } from "../assets/images";
+import { big1, big2, port2, port3, port4 } from "../assets/images";
 
 export const educationData = [
   {

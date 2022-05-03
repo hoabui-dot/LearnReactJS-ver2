@@ -25,16 +25,16 @@ const Popup = ({ clickImg, setClickImg, valuePopup, setValuePopup }) => {
   return (
     <div className='popup'>
       <div className={clickImg ? "popup__modal active" : "popup__modal"}>
+        <div className='popup__btn'>
+          <div className='btn btn-prev' onClick={prevSlide}>
+            <i className='fa-solid fa-angle-left'></i>
+          </div>
+          <div className='btn btn--next' onClick={nextSlide}>
+            <i className='fa-solid fa-chevron-right'></i>
+          </div>
+        </div>
         <div id='id01' onClick={handleClick} className='content'>
           <div className='content__wrap'>
-            <div className='popup__btn'>
-              <div className='prev' onClick={prevSlide}>
-                <i className='fa-solid fa-angle-left'></i>
-              </div>
-              <div className='next' onClick={nextSlide}>
-                <i className='fa-solid fa-chevron-right'></i>
-              </div>
-            </div>
             {popup &&
               !!popup.length &&
               popup.map((data, index) =>

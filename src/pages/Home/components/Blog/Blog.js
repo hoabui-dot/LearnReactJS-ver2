@@ -15,7 +15,7 @@ const Blog = () => {
             {dataBlog &&
               dataBlog.map((data, index) => (
                 <BlogItem
-                  flip={index % 2 == 0 ? "" : "flip"}
+                  flip={index % 2 === 0 ? "" : "flip"}
                   data={data}
                   key={index}
                 />
