@@ -13,25 +13,24 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
-          - label: 'Card Section'
-              name: 'cardSection'
-              widget: 'object'
-              collapsed: true
-              fields:
-                - label: "Your Name"
-                  name: "yourName"
-                  widget: "string"
-                  
-                - label: "Your Job"
-                  name: "yourJob"
-                  widget: "string"
+          - label: "Card Section"
+            name: "cardSection"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Your Name"
+                name: "yourName"
+                widget: "string"
+
+              - label: "Your Job"
+                name: "yourJob"
+                widget: "string"
 
           - label: "Banner Section"
-              name: "bannerSection"
-              widget: "object"
-              collapsed: true
-              fields:
-                - label: "Your Image"
-                  name: "yourImage"
-                  widget: "image"
-                
+            name: "bannerSection"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Your Image"
+                name: "yourImage"
+                widget: "image"
