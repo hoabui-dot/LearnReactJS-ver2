@@ -11,10 +11,11 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "content/Home/Home.md"
+        file: "content/Home"
         fields:
           - label: "Banner"
             name: "banner"
+            file: "Card.md"
             fields:
               - label: "Avatar"
                 name: "avatar"
@@ -25,6 +26,7 @@ collections:
 
           - label: "Card"
             name: "card"
+            file: "Banner.md"
             fields:
               - label: "Avatar"
                 name: "avatar"
