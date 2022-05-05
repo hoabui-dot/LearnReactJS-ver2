@@ -33,7 +33,6 @@ function App() {
       observer.observe(ele);
     });
   }, []);
-
   useEffect(() => {});
 
   return (

@@ -4,8 +4,10 @@ import { Link } from "react-scroll";
 import "./Banner.scss";
 import ButtonScrollTop from "../../../../components/ButtonScrollTop/Button";
 import logo from "../../../../assets/images/profile.png";
+import { attributes } from "../../../../content/Home.md";
 
 const Banner = () => {
+  const { yourImage } = attributes;
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const handleOpenMenu = () => {
@@ -17,7 +19,11 @@ const Banner = () => {
       <nav id='theMenu' className={toggleMenu ? "menu menu__open" : "menu"}>
         <div className='menu__wrap'>
           <div className='logo__flat'>
-            <img alt='personal logo' className='img__responsive' src={logo} />
+            <img
+              alt='personal logo'
+              className='img__responsive'
+              src={yourImage}
+            />
           </div>
           <br />
           <Link to='banner' spy={true} smooth={true} duration={500}>

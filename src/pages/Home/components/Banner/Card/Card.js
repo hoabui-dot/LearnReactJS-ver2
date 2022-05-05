@@ -4,17 +4,20 @@ import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import CallIcon from "@mui/icons-material/Call";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { attributes } from "../../../../../content/Home.md";
 import "./Card.scss";
 
 const Card = () => {
+  const { yourName, yourJob } = attributes;
+
   return (
     <section className='card'>
       <div className='container'>
         <div className='card__wrap box__shadow animated'>
           <div className='card__content'>
             <div className='card__name'>
-              <h4>bui van hoa</h4>
-              <h6>Software Engineer & UI/UX Expert</h6>
+              <h4>{yourName}</h4>
+              <h6>{yourJob}</h6>
             </div>
             <div className='card__infos'>
               <ul className='infos__list'>
