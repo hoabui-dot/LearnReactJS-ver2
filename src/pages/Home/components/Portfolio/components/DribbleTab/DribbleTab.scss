@@ -1,7 +1,8 @@
-@import "../../../../../../App.scss";
-@import "../../../../../../index.scss";
+@import '../../../../../../App.scss';
+@import '../../../../../../index.scss';
 
 .dribbleSlide__wrap {
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
