@@ -35,4 +35,25 @@ const Home = () => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const filesInBlogs = fs.readdirSync("./content/blogs");
+
+  const blogs = filesInBlogs.map(filename => {
+    const file = fs.readFileSync(`./content/blogs/${filename}`, "utf8");
+    const matterData = matter(file);
+
+    return {
+      ...matterData.data, // matterData.data contains front matter
+      slug: filename.slice(0, filename.indexOf(".")),
+    };
+  });
+
+  return {
+    props: {
+      blogs,
+    },
+  };
+}
+
 export default Home;

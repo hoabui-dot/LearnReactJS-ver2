@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "public/uploads" # Where media files will be stored
+public_folder: "/uploads" # Where the media files can be accesed from the server
+publish_mode: editorial_workflow # For Drafts
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Card"
+        name: "card"
+        file: "content/Card/Card.md"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - label: "Featured Image"
+            name: "thumbnail"
+            widget: "image"
+          - label: "Featured Image"
+            name: "background"
+            widget: "image"
+      - label: "Description"
+        name: "description"
+        file: "content/Description/Description.md"
+        fields:
+          - { label: "Description", name: "description", widget: "text" }
