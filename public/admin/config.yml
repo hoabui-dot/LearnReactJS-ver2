@@ -13,12 +13,9 @@ collections:
         name: "home"
         file: "content/Home/Home.md"
         fields:
-          - label: "Featured Image"
-            name: "avatar"
-            widget: "image"
           - label: "Banner"
             name: "banner"
-            widget: list
+            file: "content/Banner/Banner.md"
             fields:
               - label: "Avatar"
                 name: "avatar"
@@ -29,7 +26,7 @@ collections:
 
           - label: "Card"
             name: "card"
-            widget: list
+            file: : "content/Card/Card.md"
             fields:
               - label: "Avatar"
                 name: "avatar"
