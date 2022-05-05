@@ -15,7 +15,6 @@ collections:
         fields:
           - label: "Banner"
             name: "banner"
-            file: "content/Banner/Banner.md"
             fields:
               - label: "Avatar"
                 name: "avatar"
@@ -26,7 +25,6 @@ collections:
 
           - label: "Card"
             name: "card"
-            file: : "content/Card/Card.md"
             fields:
               - label: "Avatar"
                 name: "avatar"
