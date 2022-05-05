@@ -9,19 +9,31 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Card"
-        name: "card"
-        file: "content/Card/Card.md"
+      - label: "Home"
+        name: "home"
+        file: "content/Home/Home.md"
         fields:
-          - { label: "Name", name: "name", widget: "string" }
           - label: "Featured Image"
-            name: "thumbnail"
+            name: "avatar"
             widget: "image"
-          - label: "Featured Image"
-            name: "background"
-            widget: "image"
-      - label: "Description"
-        name: "description"
-        file: "content/Description/Description.md"
-        fields:
-          - { label: "Description", name: "description", widget: "text" }
+          - label: "Banner"
+            name: "banner"
+            widget: list
+            fields:
+              - label: "Avatar"
+                name: "avatar"
+                widget: "image"
+              - label: "text"
+                name: "text"
+                widget: "text"
+
+          - label: "Card"
+            name: "card"
+            widget: list
+            fields:
+              - label: "Avatar"
+                name: "avatar"
+                widget: "image"
+              - label: "text"
+                name: "text"
+                widget: "text"
